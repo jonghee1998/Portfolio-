@@ -1,0 +1,7 @@
+install.packages("data.table")
+install.packages('glmnet')
+install.packages('caret')
+install.packages('Metrics')
+installed.packages('plotmo')
+installed.packages('tidyverse')
+installed.packages('leaps')

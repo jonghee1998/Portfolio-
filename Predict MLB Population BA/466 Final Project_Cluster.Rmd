@@ -1,0 +1,105 @@
+---
+title: "466 Final project_1"
+author: "JongHee Lee"
+date: "2023-04-14"
+output: pdf_document
+---
+
+```{r setup, include=FALSE}
+library(readxl)
+library(dplyr)
+library(tidyr)
+library(ggplot2)
+
+mlb <-read_excel("~/Desktop/JH/PSU/23 SPR/Stat 466/Predict MLB Population BA/2022_MLB_Data.xlsx")
+mlb <-mlb[-94, c('Name', 'Age', 'Tm', 'BA')]
+```
+
+In this project, we aim to predict the population mean of Batting Averages (BA) for Major League Baseball (MLB) players in the 2022 season, using player-specific statistics as our foundation. In the sport of baseball, BA is an essential metric that represents a batter's ability to hit the ball successfully, calculated as the number of hits divided by the number of at-bats. 
+
+
+```{r eda, fig.height = 3.5}
+head(mlb)
+
+par(mfrow=c(1,2))
+hist(mlb$BA, main = "Histogram of BA", xlab = "Batting Average")
+boxplot(mlb$BA, main = "Boxplot of BA", xlab = "Batting Average")
+```
+# EDA
+
+This dataset has a population size of 130, and it includes individual player information and BA data. We have confirmed through the histogram and boxplot for BA that the graph is symmetrical and there are no outliers. Since the dataset size is not large, we will calculate the estimate mean with bound using one-step cluster sampling.
+
+
+```{r div_cluster}
+set.seed(123) 
+sample(1:31, 5) # select n = 5
+
+data <- mlb %>%
+  filter(Tm %in% c('STL','TOR','SEA','ATL','NYY'))
+
+ggplot(data = data, aes(x = Tm, y = BA, group = Tm)) +
+  geom_boxplot() +
+  labs(title = "Boxplot of BA by Cluster", x = "Cluster", y = "BA") +
+  theme_minimal()
+```
+
+
+```{r}
+data$Tm <- as.numeric(as.factor(data$Tm))
+
+data <- data %>%
+  group_by(Tm) %>%
+  summarize(mi = n(), yi = sum(BA)) 
+
+head(data)
+```
+# One-Stage Cluster Sampling
+When the entire dataset is divided into clusters based on teams, 31 clusters are formed. We conducted sampling using Simple Random Sampling (SRS) on 5 clusters and transformed the data into a more convenient form for calculation.
+
+
+```{r assumption, fig.height = 3}
+plot(data$mi, data$yi,  main = "Scatterplot between mi and yi", xlab = "mi", ylab = "yi")
+```
+assumption 1: Linear positive relationship between yi and mi with intercept near 0
+  -> Since scatterplot has positive linear trend, it satisfies assumption.
+
+assumption 2: Component n >= 5
+  -> n = 5
+
+Additionally, we have confirmed that our sample data also has no outliers and is approximately symmetric.
+
+```{r calculate}
+M = 130
+N = 31
+Mbar = M/N
+n = 5
+
+ybar = sum(data$yi) / sum(data$mi) # 0.262
+
+sr2 = var(data$yi - ybar*data$mi) # 0.00435
+var.ybar = (1- n/N)*(sr2/(n*Mbar^2))
+bound = 2*sqrt(var.ybar) # 0.013
+```
+
+As a result, population mean BA for MLB players in 2022 is between 0.262 +- 0.013
+
+```{r population mean and bound}
+# Solution?
+mean(mlb$BA) # 0.258
+```
+# Check Result
+Our population mean is 0.258, and since it falls within our predicted range, we can conclude that the analysis has been performed well.
+
+
+\newpage
+
+# Code Appendix
+
+```{r codeAppendix, ref.label = knitr::all_labels(), echo = TRUE, eval = FALSE}
+
+```
+
+
+
+
+

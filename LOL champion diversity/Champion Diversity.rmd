@@ -1,0 +1,686 @@
+---
+title: "Professional League of Legends Player Champion Diversity"
+author: "Dylan DeJean, Justin Huang, Jong Hee Lee"
+date: "2022-12-14"
+output:
+  pdf_document: default
+  html_document:
+    df_print: paged
+urlcolor: blue
+header-includes:
+- \usepackage{subfig}
+- \usepackage{amsmath}
+geometry: left=1in,right=1in,top=1in,bottom=1in
+---
+
+```{r setup, include=FALSE}
+# Setting Document Options ----
+knitr::opts_chunk$set(
+  echo = FALSE,
+  warning = FALSE,
+  message = FALSE,
+  fig.align = "center"
+)
+
+# Load Packages ----
+packages <- c("tidyverse", "knitr", "kableExtra",
+              "parameters", "car", "hasseDiagram",
+              "psych", "DescTools", "emmeans", "openxlsx")
+invisible(lapply(X = packages, FUN = library, character.only = TRUE, quietly = TRUE))
+
+# Setting Global Options ----
+options(knitr.kable.NA = "")
+options("contrasts" = c("contr.sum", "contr.poly"))
+
+# Load Additional Tools ----
+source("https://raw.github.com/neilhatfield/STAT461/master/rScripts/ANOVATools.R")
+source("https://raw.github.com/neilhatfield/STAT461/master/rScripts/shadowgram.R")
+
+# Read in Data
+data <- read_csv("data.csv")
+data_mod <- data %>% 
+  dplyr::select(-Player) %>%
+  mutate(Region=as.factor(Region),
+         Role=factor(Role, levels=c("Top", "Jungle","Mid", "Bot", "Support")),
+         Team=as.factor(Team))
+
+data_num <- data_mod %>%
+  mutate(Region=as.numeric(Region),
+         Role=as.numeric(Role),
+         Team=as.numeric(Team))
+
+data_major <- data_mod %>%
+  filter(Region %in% c("China", "EU", "Korea", "North America")) %>%
+  mutate(Region=factor(Region, levels=c("China", "EU", "Korea", "North America")),
+         ChampsPlayed=ChampsPerGame*6) 
+
+```
+
+# Executive Summary
+
+Using data from the official League of Legends Worlds 2022 tournament group stages and through post hoc analysis, we found that Mid lane players use less unique champions over their games compared to Top lane players and Support players. We also observed from an omnibus test that there was no significant effect on unique champions played from region or the interaction of role and region. We discuss limitations of this observational study as well.
+
+# Introduction and Background
+
+League of Legends is an online video game with an active professional scene in multiple regions around the world. A match consists of two teams of five players, each with their own character in-game (called champions) and assigned role. There are currently 162 unique champions available to pick in the game and 5 roles: Top, Jungle, Mid, Bottom, and Support. Champion pool is a statistic used to determine the health of the current game meta. A large champion pool indicates that a large number of different strategies can be viable in professional play, while a small champion pool indicates that players are being forced to stick to certain strategies to see success. We will be using a rate of unique champions picked per game as a measurement of champion pool. Professional play is divided into many regions, but the main four are North America, European Union, China, and Korea.
+
+# Research Questions
+
+For this study we have the following research questions:
+
+1)  Does a player's geographical region impact their number of unique champions played?
+    -   $H_{1,0}$: There is no statistically significant impact on a player's number of  unique champions played due to geographical region.
+    -   $H_{1,A}$: There is a statistically significant impact on a player's number of  unique champions played due to geographical region.
+    
+2) Does a player's in-game role impact their number of unique champions played?
+    -   $H_{2,0}$: There is no statistically significant impact on a player's number of  unique champions played due to in-game role.
+    -   $H_{2,A}$: There is a statistically significant impact on a player's number of  unique champions played due to in-game role.
+    
+3) Does the interaction between a player's in-game role and geographical region impact their number of unique champions played?
+    -   $H_{3,0}$: There is no statistically significant impact on a player's number of  unique champions played due the interaction between geographical region and in-game role.
+    -   $H_{3,A}$: There is a statistically significant impact on a player's number of  unique champions played due the interaction between geographical region and in-game role.
+
+If we find significant impacts, we will inquire further with the following:
+
+-   Which region has the smallest number of unique champions per game?
+-   Is there a significant difference in unique champions per game between geographical regions in the East vs. in the West?
+
+# Methods
+
+To answer these questions, we pulled data from the group stages of the most recent major tournament, Worlds 2022. Our measurement units are players in the tournament and we are only observing the 6 group stage games of the tournament. Our response is unique champions played throughout these 6 matches, meaning a response of 6 would indicate every game a new champion was played. Our focus is on the four main regions in professional League of Legends: North America, EU, Korea, and China. The data we will be observing are of 20 players from Korea and China and 15 players from North America and EU that were in the tournament. Each player has one of the five roles and stay in that role for the entire tournament.
+
+## Analytical Methods
+
+To analyze our data and answer our research questions we will use R (version 4.2.2) and make use of a two-way factorial ANOVA model.
+
+### Appropriateness of ANOVA
+
+Our response of interest is quantitative and our two factors (role and region) are categorical. 
+
+```{r hasseDiagram}
+#| fig.cap = "Hasse Diagram for our study",
+#| fig.height = 3
+
+modelLabels <- c("1 Champion 1", "5 Role 4", "4 Region 3", "20 Role × Region 12", "70 (Player) 50")
+modelMatrix <- matrix(
+  data = c(FALSE, FALSE, FALSE, FALSE, FALSE, TRUE, FALSE, FALSE, FALSE, FALSE, TRUE, FALSE, FALSE, FALSE, FALSE, TRUE, TRUE, TRUE, FALSE, FALSE, TRUE, TRUE, TRUE, TRUE, FALSE),
+  nrow = 5,
+  ncol = 5,
+  byrow = FALSE
+)
+hasseDiagram::hasse(
+ data = modelMatrix,
+ labels = modelLabels
+)
+```
+
+Figure \ref{fig:hasseDiagram} shows the Hasse diagram for our study.  We can see our two factors (fixed effects) as well as their interaction. Further, given our sample size of 70 players, we have plenty of degrees of freedom to estimate all main effects, interactions, and error terms. These elements point towards the appropriateness of ANOVA methods in answering our research questions. We will proceed with a two-way ANOVA design since we want to test the effects of both of these factors.
+
+```{=tex}
+\begin{equation} \label{eq:model}
+Y_{ijk}=\mu_{\cdot\cdot\cdot}+\alpha_{i} + \beta_{j} + \alpha\beta_{ij} + \epsilon_{ijk}
+\end{equation}
+```
+Equation \ref{eq:model} and Figure \ref{fig:hasseDiagram} both represent the fixed-effects, two-way ANOVA model we are interested in. In particular, the $\mu_{\cdot\cdot\cdot}$ represents the baseline effect of playing professional League of Legends games, $\alpha_i$ represents the main effect of role, $\beta_j$ represents the main effect of region, and $\alpha\beta_{ij}$ the interaction of role and region. Our residual/error term ($\epsilon_{ijk}$) represents the variability present within the indiviudal professional players and any other sources of variability that we do not account for in our model.
+
+### Addressing the Multiple Comparisons Problem
+
+First, we will have an omnibus test on the factor effects of region on the response to answer our main research questions. The following research questions will be answered through post-hoc analysis. Our post-hoc analysis will be comprised of pairwise comparisons as well as contrasts. We will control our False Discovery Rate at a 10% level using the Benjamini-Hochberg method. Each hypothesis test will be evaluated at a 0.1 Unusualness Threshold.
+
+# Exploratory Data Analysis
+
+```{r region_stats}
+# Produce values of descriptive statistics
+region_stats <- psych::describeBy(
+  data_major$ChampsPlayed,
+  group=data_major$Region,
+  # ChampsPerGame ~ Region, 
+  # data = data_mod,
+  na.rm = TRUE,
+  skew = TRUE,
+  ranges = TRUE,
+  quant = c(0.25, 0.75),
+  IQR = TRUE,
+  mat = TRUE,
+  digits = 4
+)
+
+# Create a table of values ----
+region_stats %>%
+  tibble::remove_rownames() %>%
+  dplyr::select(
+    group1, n, min, Q0.25, median, Q0.75, max, mad, mean, sd, skew, kurtosis
+  ) %>%
+  knitr::kable(
+    caption = "Summary Statistics for Unique Champions Played by Region",
+    digits = 2,
+    format.args = list(big.mark = ","),
+    align = rep(c("l", "c"), times = c(2, 11)),
+    col.names = c("Region", "n", "Min", "Q1", "Median", "Q3", "Max", "MAD",
+                  "SAM", "SASD", "Sample Skew", "Sample Ex. Kurtosis"),
+    booktabs = TRUE
+  )  %>%
+  kableExtra::kable_styling(
+    font_size = 12,
+    latex_options = c("HOLD_position", "scale_down")
+  ) 
+```
+
+Table \ref{tab:region_stats} shows the values for descriptive statistics of played champions per game broken down by the major regions: China, the European Union, South Korea, and North America. This describes the region that the player's team competes in during regional splits. Notably, there isn't balance in the number of players by region as evidenced by the *n* column, so we have to be careful about our assumptions and the type of sum of squares we use.
+
+There are a few things to note from Table \ref{tab:region_stats}. At first glance, the quantiles seem similar between regions, as are Sample Arithmetic Mean (SAM), Sample Arithmetic Standard Deviation (SASD), and Sample Kurtosis. However, the North American players are much more skewed right in terms of absolute champion pool than the others, indicating that they have more observed unique champions picked. Additionally, the Median Absolute Deviation for EU players is higher than the other regions, which indicates that the distance of half the observations from the median is higher for EU players compared to other regions. The reason behind this will be addressed when looking at our box plot.
+
+```{r role_stats}
+# Produce values of descriptive statistics
+role_stats <- psych::describeBy(
+  data_major$ChampsPlayed,
+  group=data_major$Role,
+  na.rm = TRUE,
+  skew = TRUE,
+  ranges = TRUE,
+  quant = c(0.25, 0.75),
+  IQR = TRUE,
+  mat = TRUE,
+  digits = 4
+)
+
+# Create a table of values ----
+role_stats %>%
+  tibble::remove_rownames() %>%
+  dplyr::select(
+    group1, n, min, Q0.25, median, Q0.75, max, mad, mean, sd, skew, kurtosis
+  ) %>%
+  knitr::kable(
+    caption = "Summary Statistics for Unique Champions Played by Role",
+    digits = 2,
+    format.args = list(big.mark = ","),
+    align = rep(c("l", "c"), times = c(2, 11)),
+    col.names = c("Role", "n", "Min", "Q1", "Median", "Q3", "Max", "MAD",
+                  "SAM", "SASD", "Sample Skew", "Sample Ex. Kurtosis"),
+    booktabs = TRUE
+  )  %>%
+  kableExtra::kable_styling(
+    font_size = 12,
+    latex_options = c("HOLD_position", "scale_down")
+  ) 
+```
+
+Table \ref{tab:role_stats} breaks down the descriptive statistics for unique observed champion picks by role. There are always five players per team, each with a unique role (Top, Jungle, Mid, Bot, Support), which is why the role factor is balanced (confirmed by *n*).
+
+Similar to Table \ref{tab:region_stats}, we have similar statistics across all roles, save two. The MAD of Mid players is 0 unique champions, which indicates that the difference in unique champions picked for Mid players is extremely low (i.e. similar values observed). Morever, Top, Mid, and Bot champion picks are more skewed right while Jungle and Support champion picks are slightly skewed left. Although the skewness is not large, Top in particular stands out at 0.35 compared to Jungle's -0.19 sample skewness, which may indicate that Top players tend to pick more unique champions.
+
+```{r two_descp_stats}
+# Produce values of descriptive statistics
+two_descp_stats <- psych::describeBy(
+  data_major$ChampsPlayed,
+  group=list(data_major$Region, data_major$Role),
+  # ChampsPerGame ~ Region + Role, 
+  # data = data_mod,
+  na.rm = TRUE,
+  skew = TRUE,
+  ranges = TRUE,
+  quant = c(0.25, 0.75),
+  IQR = TRUE,
+  mat = TRUE,
+  digits = 4
+)
+
+# Create a table of values ----
+two_descp_stats %>%
+  tibble::remove_rownames() %>%
+  dplyr::select(
+    group1, group2, n, min, Q0.25, median, Q0.75, max, mad, mean, sd, skew, kurtosis
+    # group1, group2, n., min., median., max., mad., mean., sd., skew., kurtosis.
+  ) %>%
+  as.data.frame() %>%
+  knitr::kable(
+    caption = "Summary Statistics for Champions per Game by Region and Role",
+    digits = 2,
+    format.args = list(big.mark = ","),
+    align = rep(c("l", "c"), times = c(2, 11)),
+    col.names = c(# "Region", "Team", "n", "Min", "Median", "Max", "MAD",
+                  "Region", "Role", "n", "Min", "Q1", "Median", "Q3", "Max", "MAD",
+                  "SAM", "SASD", "Sample Skew", "Sample Ex. Kurtosis"),
+    booktabs = TRUE
+  )  %>%
+  kableExtra::kable_styling(
+    font_size = 12,
+    latex_options = c("HOLD_position", "scale_down")
+  ) 
+
+```
+
+Table \ref{tab:two_descp_stats} shows the values for various statistics broken out by the player's role and region. Again, we currently do not have a balanced design because of an unequal number of teams from each reigon, which makes a choice of Sum of Squares and assumptions slightly more challenging.
+
+Looking at the descriptive statistics, we see multiple combinations of Region and Role have 0 MAD, which indicates, based on the quantiles, that there are not many unique observations in them (e.g. Chinese Top players, European Support players, etc). Most notably, European Top players and North American Jungle players have a SASD and MAD of 0 champions, and their quantiles are the same, which indicates that they all picked the same amount of unique champions. This may pose a challenge during analysis. Excluding those two combinations, there are many varying values of skewness and SASD, which may indicate that the number of unique champions played per player is dependent on their role and team region.
+
+```{r boxplots}
+#| fig.cap = "Box Plots of Unique Champions Played",
+#| fig.height = 2.75,
+#| fig.pos = "H"
+
+# Create side-by-side box plots of the distances ----
+ggplot(
+  data = data_major,
+  mapping = aes(
+    x = Region,
+    y = ChampsPerGame,
+    fill = Role,
+  )
+) +
+  geom_boxplot() +
+  theme_bw() +
+  xlab("Region") +
+  ylab("Player Unique Champions Played") +
+  labs(
+    fill = "Role"
+  ) +
+  theme(
+    legend.position = "bottom",
+    text = element_text(size = 12)
+  )
+  # scale_fill_manual(
+  #   values = boastUtils::boastPalette
+  # )
+
+```
+
+Figure \ref{fig:boxplots} shows the box plots of the twenty observed groups by region and role. We see four outliers (the black dots) in sample minimum from Chinese Top players, Chinese Support players, Korean Top players, and Korean Mid players, by the 1.5-*IQR* rule. The single lines for European Top players and North American Jungle players confirm our analysis from Table \ref{tab:two_descp_stats}: all players in those groups picked the same number of unique champions.
+
+Recall that from Table \ref{tab:region_stats}, European players have an observed MAD of 0 unique champions picked, and in the boxplot, we can see that the players have a very similar sample distribution, with the exception being European supports. On the other hand, Chinese players have multiple differences in observations by role, with Chinese Mid players having the lowest observed unique champions picked. By contrast, North American players seem to outperform the most compared to other regions, as evidenced by their box plots. Although it's difficult to visually decide which role outperforms the most, it seems that Mid players are more conservative in their champion pool.
+
+If there were strong impacts due to the treatment groups, then we would expect to see six distinct modal clumps in a shadowgram of our response. Figure \ref{fig:shadowgram} provides a shadowgram of our data. As a reminder, we're looking not at the peaks but at dark portions formed by overlapping shadows. In essence, we do not see six modal clumps, but rather one. This suggests that if there are effects due to position and/or angle, they might be weak and/or there is enough noise in our data to obscure the effects.
+
+Figure \ref{fig:shadowgram} displays a shadowgram of our data. If all region and role combinations affect unique player champion picks, we would expect to see twenty distinct mounds. However, we only see four mounds, which may indicate that the interaction effect between the players' region and role is weak, or we lack data. The latter seems possible, since there are only three or four players per observed group.
+
+```{r shadowgram}
+#| fig.cap = "Shadowgram of Unique Champions Played",
+#| fig.pos = "H",
+#| fig.height = 2.75
+
+# Create a shadowgram
+shadowgram(
+  dataVec = data_major$ChampsPlayed,
+  label = "Unique Champions Played",
+  layers = 70,
+  aStep = 7,
+  color = "red"
+)
+
+```
+
+```{r interaction_plot}
+#| fig.cap = "Interaction Plot between Region and Role for Unique Champions Played",
+#| fig.pos = "H",
+#| fig.height = 2.75
+
+# Create an interaction plot ----
+ggplot(
+  data = data_major,
+  mapping = aes(
+    x = Region,
+    y = ChampsPlayed,
+    shape = Role,
+    color = Role,
+    linetype = Role,
+    group = Role
+  )
+) +
+  stat_summary(fun = "mean", geom = "point", size = 3) +
+  stat_summary(fun = "mean", geom = "line", linewidth = 1) +
+  geom_jitter(width = 0.1, height = 0.1, alpha = 0.5, size = 1) +
+  ggplot2::theme_bw() +
+  xlab("Player Region") +
+  ylab("Played Champions") +
+  labs(
+    color = "Player Role",
+    shape = "Player Role",
+    linetype = "Player Role"
+  ) +
+  theme(
+    legend.position = "bottom",
+    text = element_text(size = 12)
+  )
+
+```
+
+Figure \ref{fig:interaction_plot} displays a scatter plot of the `r nrow(data_major)` players' observed champions per game, broken down by region and role. The overlaid lines connect the Sample Arithmetic Means across roles for each region. In the scatter plot, we observe a wild overlap in data positions based on region for each role. This is confirmed by the trend lines, which show serious overlap. Based on the non-parallel lines, the data suggests an observed interaction between role and region.
+
+Figure \ref{fig:team_region_interaction} displays an interaction plot between region and player team based on the same structure as Figure \ref{fig:interaction_plot}. No trend lines exist since teams are unique to their region, but this confirms that, of course, no interaction is possible. On the other hand, Figure \ref{fig:team_role_interaction} displays an interaction plot between player role and player team. Again, the trend lines show serious overlap which indicates the possibility of an interaction, but this is harder to interpret since only one observation exists per group (only one player per team per role). This analysis will be used for our model decision.
+
+```{r team_region_interaction}
+#| fig.cap = "Interaction Plot between Region and Team for Unique Champions Played",
+#| fig.pos = "H",
+#| fig.height = 2.75,
+#| fig.width = 8
+
+# Create an interaction plot ----
+ggplot(
+  data = data_major,
+  mapping = aes(
+    x = Region,
+    y = ChampsPlayed,
+    shape = Team,
+    color = Team,
+    linetype = Team,
+    group = Team
+  )
+) +
+  stat_summary(fun = "mean", geom = "point", size = 3) +
+  stat_summary(fun = "mean", geom = "line", linewidth = 1) +
+  geom_jitter(width = 0.1, height = 0.1, alpha = 0.5, size = 1) +
+  ggplot2::theme_bw() +
+  xlab("Player Region") +
+  ylab("Played Champions") +
+  labs(
+    color = "Player Team",
+    shape = "Player Team",
+    linetype = "Player Team"
+  ) +
+  theme(
+    legend.position = "bottom",
+    text = element_text(size = 12)
+  )
+
+```
+
+```{r team_role_interaction}
+#| fig.cap = "Interaction Plot between Role and Team for Unique Champions Played",
+#| fig.pos = "H",
+#| fig.height = 2.75,
+#| fig.width = 8
+
+# Create an interaction plot ----
+ggplot(
+  data = data_major,
+  mapping = aes(
+    x = Role,
+    y = ChampsPlayed,
+    shape = Team,
+    color = Team,
+    linetype = Team,
+    group = Team
+  )
+) +
+  stat_summary(fun = "mean", geom = "point", size = 3) +
+  stat_summary(fun = "mean", geom = "line", linewidth = 1) +
+  geom_jitter(width = 0.1, height = 0.1, alpha = 0.5, size = 1) +
+  ggplot2::theme_bw() +
+  xlab("Player Role") +
+  ylab("Played Champions") +
+  labs(
+    color = "Player Team",
+    shape = "Player Team",
+    linetype = "Player Team"
+  ) +
+  theme(
+    legend.position = "bottom",
+    text = element_text(size = 12)
+  )
+
+```
+
+# Results
+
+## Assumptions
+
+We will be checking three assumptions that, if met, would allow us to use a parametric shortcut for analysis. These assumptions are Gaussian residuals, homoscedasticity, independence of observations.
+
+```{r fit_model}
+# Fit model
+model <- aov(
+  formula = ChampsPlayed ~ Region*Role,
+  data = data_major
+)
+```
+
+### Gaussian Residuals
+
+```{r qq_plot}
+#| fig.cap = "Normal QQ Plot for Unique Champions Played",
+#| fig.pos = "H"
+
+# Generate the qq plot ----
+car::qqPlot(
+  x = residuals(model), 
+  distribution = "norm",
+  envelope = 0.90,
+  id = FALSE,
+  pch = 20,
+  ylab = "Residuals (Champions)"
+)
+
+```
+Looking at the QQ plot we can see that no points lie beyond the 90% envelope around the line. This indicates that the residuals do follow a Gaussian distribution so we can proceed knowing that this assumption is met.
+
+### Homoscedasticity
+
+```{r tukey_anscombe}
+#| fig.cap = "Tukey-Anscombe Plot for Unique Champions Played",
+#| fig.pos = "H",
+#| fig.height = 3
+
+# Generate the Tukey-Anscombe plot ----
+ggplot(
+  data = data.frame(
+    residuals = residuals(model),
+    fitted = fitted.values(model)
+  ),
+  mapping = aes(x = fitted, y = residuals)
+) +
+  geom_point(size = 2) +
+  geom_hline(
+    yintercept = 0,
+    linetype = "dashed",
+    color = "grey50"
+  ) +
+  geom_smooth(
+    formula = y ~ x,
+    method = stats::loess,
+    method.args = list(degree = 1),
+    se = FALSE,
+    linewidth = 0.5
+  ) +
+  theme_bw() +
+  xlab("Fitted values (Champions)") +
+  ylab("Residuals (Champions)")
+
+```
+When observing the Tukey-Anscombe plot we see a horizontal smoother line at 0. This is ideal and points us towards the assumption of homoscedasticity being met. However, we do see that at the high end of the fitted values, the vertical space being taken up is less than half of the largest section of vertical space. This would indicate a possible issue, however since the smoother line is quite satisfactory, we will proceed with caution.
+
+### Independence of Observations
+
+Regarding the assumption of independence of observations, the assessment becomes difficult because of the complexity of the game, and we have no provided measurement order to assess graphically. There are a few problems, two of which are:
+
+1. When a player picks a champion in a game, they are picked without replacement, i.e. no two players can play the same champion.
+2. Usually in a tournament, different teams play a different amount of games based on the elimination bracket.
+
+We can address these two concerns. For the first problem, there exists a "meta" pool of champions per role; Top players play champions that a Bot player would not play, and the same is true for any two roles. By using role as a factor, we indirectly account for this problem. For the second problem, we restrict our study to the group stage of the tournament, where each team plays six games. This introduces a natural, uniform scope of analysis to our study. The independence assumption is discussed further under Limitations, but we will proceed with our analysis based on this reasoning.
+
+The final assumption for our factorial model is the existence of an interaction between our factors. Based on Figure \ref{fig:interaction_plot}, we detected an interaction between region and role, so the assumption is satisfied.
+
+## Omnibus
+
+Table \ref{tab:anovaTable} shows the ANOVA table for our two-way ANOVA model, using the parametric shortcut. For our three omnibus research questions, we will focus on the first three rows. Since we have unbalanced data, we have to use Type 3 sums of squares. The main effect of role accounts for approximately 2.35 times as much variation as our residuals while the main effect of region accounts for 1.12 times as much variation as our residuals. The interaction of role and region accounts for 1.2 times as much variation as what is left unexplained by our model. Under their respective null hypotheses, for role we would anticipate observing a F ratio of 2.35 around 7%, for region 1.12 around 34% of the time, and for the interaction 1.20 around 31% of the time. The role term appears to have statistical significance (p-value less than our Unusualness Threshold of 0.1), which appears to have a large effect size in explaining around 15% of the variation in the number of unique champs played.
+
+
+```{r anovaTable}
+parameters::model_parameters(
+  model = model,
+  effectsize_type = c("eta", "omega", "epsilon"),
+  type = 3, # We used type 3
+  drop = "(Intercept)",
+  verbose = FALSE
+  ) %>%
+  dplyr::mutate(
+  p = ifelse(
+  test = is.na(p),
+  yes = NA,
+  no = pvalRound(p)
+  )
+) %>%
+  knitr::kable(
+  digits = 4,
+  col.names = c("Source", "SS", "df", "MS", "F", "p-value",
+                "Partial Omega Sq.", "Partial Eta Sq.", "Partial Epsilon Sq."),
+  caption = "ANOVA Table for Unique Champions Played Study",
+  align = c('l',rep('c',8)),
+  booktab = TRUE,
+) %>%
+  kableExtra::kable_styling(
+  bootstrap_options = c("striped", "condensed"),
+  font_size = 12,
+  latex_options = c("scale_down", "HOLD_position")
+)
+```
+
+## Post Hoc Analysis
+
+Given that we have significant results for role as a factor only, we will proceed with the following research questions:
+
+  - Which role has the least number of unique champions picked?
+  - Is there a significant difference in number of unique champions picked between solo laners and bottom lane?
+  - Is there a significant difference in number of unique champions picked between Jungle and all other roles?
+  
+We will break these into two testing families, still controlling FDR using Benjamini-Hochberg at 0.1. The first will focus on the comparisons of role. The second will focus on comparing the solo laners ans bottom lane as well as Jungle and all other roles.
+  
+### Pairwise Comparisons
+
+```{r championsRole}
+champsRole <- emmeans::emmeans(
+  object = model,
+  specs = pairwise ~ Role,
+  adjust = "bh", # Where you specify your chosen method
+  level = 0.9 # 1--Type I Risk
+)
+
+as.data.frame(champsRole$contrasts) %>%
+  knitr::kable(
+  digits = 4,
+  col.names = c("Comparison", "Estimate","SE", "DF",
+              "t Statistic", "p-value"),
+  caption = "Pairwise Comparisons of Role - Benjamini and Hochberg 90\\% Adjustment",
+  align = rep("c", 7),
+  booktabs = TRUE
+) %>%
+  kableExtra::kable_styling(
+  bootstrap_options = c("striped", "condensed"),
+  font_size = 12,
+  latex_options = c("HOLD_position")
+)
+```
+
+Table \ref{tab:championsRole} shows the post hoc pairwise comparisons of role using the Benjamini-Hochberg method to control our False Discovery Rate. With our Unusualness Threshold of 0.1, we find that the Mid lane appears to use less unique champions compared to both the Support role and Top lane. Table \ref{tab:roleEffectSize} shows that when we have a Mid lane player and a Top lane player, the Top lane player will pick a higher number of unique champions 76.7% of the time. It also shows that for a Mid lane player and a Support player, the Mid lane player will pick a higher number of unique champions only 25.1% of the time. This shows that there is a large effect of being a Mid lane player compared to Top lane and Support.
+
+```{r roleEffectSize}
+as.data.frame(
+  eff_size(
+    object = champsRole,
+    sigma = sigma(model),
+    edf = df.residual(model)
+  )
+) %>%
+  dplyr::mutate(
+    ps = probSup(effect.size),
+    .after = effect.size
+  ) %>%
+  dplyr::select(contrast, effect.size, ps) %>%
+  knitr::kable(
+    digits = 3,
+    col.names = c("Comparison",
+                  "Cohen's d", "Probability of Superiority"),
+    align = "lccc",
+    caption = "Effect Sizes for Player Role Comparisons",
+    booktab = TRUE
+  ) %>%
+  kableExtra::kable_styling(
+    bootstrap_options = c("striped", "condensed"),
+    font_size = 12,
+    latex_options = "HOLD_position"
+  )
+```
+
+### Contrasts
+
+In League of Legends, each role plays differently in-game. For example, Top and Mid players play by themselves in "lane" (regions of the map that players start in early) while Bot and Support players play together in lane during the early stages of each game. Top and Mid are called "solo laners" while Bot and Support are grouped as "bot lane." Additionally, Jungle players specifically play in "jungle" regions of the map (everywhere outside of lanes, essentially) while the other four roles restrict themselves to lanes in the beginning. We can separate their roles as "jungler" and "laners." These two behaviors motivate our contrasts.
+
+Let $\mu_{T},\mu_J, \mu_M, \mu_B, \mu_S$ describe the true population sample arithmetic mean of Top, Jungle, Mid, Bot, and Support players, respectively. Note that our contrasts are limited to the Role factor since the observations are balanced and help with orthogonality.
+
+Our first contrast examines the difference in the number of unique champions picked between Top-Mid players and Bot-Support players, group by their early-game playstyle. Thus, the contrast is set up as $(-\frac{1}{2}, 0, -\frac{1}{2}, \frac{1}{2}, \frac{1}{2})$. Our hypotheses are:
+
+\[H_0^{TM-BS}: \frac{\mu_{T}+\mu_M}{2}=\frac{\mu{B}+\mu_{S}}{2}\]
+\[H_1^{TM-BS}: \frac{\mu_{T}+\mu_M}{2}\neq\frac{\mu{B}+\mu_{S}}{2}\]
+
+Our second contrast examines the difference in the number of unique champions picked between Jungle players and all other roles, again grouped by their early-game playstyle. Thus, the contrast is set up as $(\frac{1}{4}, -1, \frac{1}{4}, \frac{1}{4}, \frac{1}{4}$. Our hypotheses are:
+
+\[H_0^{J}: \frac{\mu_{T}+\mu_M+\mu_B+\mu_S}{4}=\mu_J\]
+\[H_1^{J}: \frac{\mu_{T}+\mu_M+\mu_B+\mu_S}{4}\neq\mu_J\]
+
+Both contrasts sum to zero, fulfilling the requirement of the contrast. Additionally, the weighted sum of both contrasts is 0, so we know that our contrasts are orthogonal, easing our analysis. Recall that since Region is unbalanced we use Type III Sum of Squares, and since we are using FDR at level 0.1, we must adjust the p-values using Benjamini & Hochberg.
+
+```{r contrasts_table}
+c1 <- c(-1/2, 0, -1/2, 1/2, 1/2)
+c2 <- c(1/4, -1, 1/4, 1/4, 1/4)
+
+contrasts(data_major$Role) <- cbind(c1, c2)
+
+### Redefine model ###
+contrasts_car_model <- car::Anova(
+  lm(ChampsPlayed ~ Region*(C(Role, c1, 1)+C(Role, c2, 1)), data=data_major),
+  type=3  # Type 3 SS
+)
+
+# Adjust row names
+rownames(contrasts_car_model) = c("(Intercept)", 
+                                  "Region", 
+                                  "T and M vs. B and S",
+                                  "J vs. T, M, B, and S",
+                                  "Region * Role: T and M vs. B and S",
+                                  "Region * Role: J vs. T, M, B, and S",
+                                  "Residuals")
+
+# Manually set adjusted p values
+contrasts_car_model$adj_p <- contrasts_car_model$`Pr(>F)`
+contrasts_car_model[3, "adj_p"] <- p.adjust(contrasts_car_model[3, "adj_p"], method="fdr", 4)
+contrasts_car_model[4, "adj_p"] <- p.adjust(contrasts_car_model[4, "adj_p"], method="fdr", 4)
+contrasts_car_model[5, "adj_p"] <- p.adjust(contrasts_car_model[5, "adj_p"], method="fdr", 4)
+contrasts_car_model[6, "adj_p"] <- p.adjust(contrasts_car_model[6, "adj_p"], method="fdr", 4)
+
+
+contrasts_car_model[-1, ] %>%  # Remove intercept row
+  knitr::kable(
+    digits=4,
+    col.names=c("SS", "DF", "F", "Raw p-value", "Adj. p-value"),
+    caption="ANOVA Table for Unique Champions Played with Role Contrasts",
+    booktabs=T,
+    align=rep("c", 4)
+  ) %>%
+  kableExtra::kable_styling(
+    font_size=12,
+    latex_options=c("HOLD_position")
+  )
+```
+
+Table \ref{tab:contrasts_table} displays the results of our post-hoc analysis with contrasts using Benjamini & Hochberg. T, J, M, B, S stand for Top, Jungle, Mid, Bot, and Support roles, respectively. In our contrasts, every single F-ratio is below one, which means that no comparison contributed more variation to the number of unique champions played than the residuals. After adjusting our p-values, they actually come out to be 1 each (or a value very close to 1). Thus, we decide to fail to reject both null hypotheses. As a result, we observe no difference in number of unique champions picked between solo laners and bot lane, and no difference between junglers and laners. 
+
+# Discussion
+
+In our omnibus test we found role to be a significant factor in our model but we did not make that same discovery for region or the interaction between region and role. In our post hoc analysis we found that Mid lane players had a less diverse champion pool than both Top lane players and Support players and that these differences had large effect sizes. However, we did not find that Mid lane players had a less diverse champion pool than every other role. We did not find a significant difference between solo lane players and bottom lane players or between Jungle players and lane players.
+
+## Limitations
+
+As mentioned in the Assumptions section, it is very difficult to assess Independence of Observations due to the complexity of League of Legends. We explain the reasons why we proceed with analysis in that section, but it is also worth noting the alternatives we considered.
+
+First, if we blocked by player team, it could help account for independence between players, since it helps deal with nuisance factors like the number of games played and champion picks without replacement. However, this option isn't ideal because of our other factors: player region and player role. If we consider all three, we only have one player per region per team per role, which isn't enough data for analysis. If we consider a model with region and team, we do have more observations to work with, but teams are unique to their region. For example, one team in Korea would not have a sister team in North America. Although they could be considered as nested factors, we believe that this model is awkward to interpret and not worth analysis, since role is an important factor in deciding which champions a player chooses. If we consider role and team, we now have one player per team per role, which again isn't enough data per group to warrant analysis. Team can't be treated as a block since it has interactions with role. Thus, we decided to proceed with a factorial model using region and role.
+
+# References
+
+Data from: https://liquipedia.net/leagueoflegends/World_Championship/2022/Group_Stage
+
+\newpage
+
+# Code Appendix
+
+```{r codeAppendix, ref.label = knitr::all_labels(), echo = TRUE, eval = FALSE}
+
+```

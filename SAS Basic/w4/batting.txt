@@ -1,0 +1,7 @@
+Tony Batista,BAL,631,76,148,20,1,26,28,5,6
+Carlos Delgado,TOR,570,117,172,38,1,42,109,19,7
+Alex Rodriguez,TEX,607,124,181,30,6,47,87,15,6
+Vernon Wells,TOR,678,118,215,49,5,33,42,7,8
+Jay Gibbons,BAL,625,80,173,39,2,23,49,3,5
+Ichiro Suzuki,SEA,679,111,212,29,8,13,36,6,1
+Jimmy Rollins,PHI,628,85,165,42,6,8,54,0,2

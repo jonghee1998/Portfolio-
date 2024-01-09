@@ -1,0 +1,1266 @@
+date,showName,theaterName,type,capacity,gross
+1995-06-04,Cats,Winter Garden,Musical,71,365355
+1995-11-19,School For Scandal,Lyceum,Play,15,27661
+1995-12-03,Cats,Winter Garden,Musical,66,354913
+1995-12-10,Cats,Winter Garden,Musical,80,433319
+1995-12-17,Cats,Winter Garden,Musical,73,393551
+1995-12-24,Cats,Winter Garden,Musical,95,435347
+1995-12-31,Cats,Winter Garden,Musical,102,701573
+1996-01-07,Cats,Winter Garden,Musical,72,391112
+1996-01-14,Cats,Winter Garden,Musical,74,295292
+1996-01-21,Cats,Winter Garden,Musical,75,330317
+1996-01-28,Cats,Winter Garden,Musical,68,301075
+1996-02-04,Cats,Winter Garden,Musical,58,254058
+1996-02-11,Cats,Winter Garden,Musical,69,319997
+1996-02-18,Cats,Winter Garden,Musical,86,423150
+1996-02-25,Cats,Winter Garden,Musical,97,446492
+1996-03-03,Cats,Winter Garden,Musical,75,349110
+1996-03-10,Cats,Winter Garden,Musical,84,391022
+1996-03-17,Cats,Winter Garden,Musical,89,427675
+1996-03-24,Cats,Winter Garden,Musical,90,456962
+1996-03-31,Cats,Winter Garden,Musical,91,455856
+1996-04-07,Cats,Winter Garden,Musical,98,528879
+1996-04-14,Cats,Winter Garden,Musical,99,523922
+1996-04-21,Cats,Winter Garden,Musical,85,426204
+1996-04-28,Cats,Winter Garden,Musical,86,438638
+1996-05-05,Cats,Winter Garden,Musical,90,445314
+1996-05-12,Cats,Winter Garden,Musical,81,398160
+1996-05-19,Cats,Winter Garden,Musical,89,448005
+1996-05-26,Cats,Winter Garden,Musical,86,429256
+1996-06-02,Cats,Winter Garden,Musical,81,415345
+1996-06-09,Cats,Winter Garden,Musical,77,398961
+1996-06-16,Cats,Winter Garden,Musical,78,390309
+1996-06-23,Cats,Winter Garden,Musical,77,404280
+1996-06-30,Cats,Winter Garden,Musical,72,387881
+1996-07-07,Cats,Winter Garden,Musical,79,411983
+1996-07-14,Cats,Winter Garden,Musical,85,429222
+1996-07-21,Cats,Winter Garden,Musical,88,464446
+1996-07-28,Cats,Winter Garden,Musical,86,453551
+1996-08-04,Cats,Winter Garden,Musical,87,455789
+1996-08-11,Cats,Winter Garden,Musical,90,490936
+1996-08-18,Cats,Winter Garden,Musical,96,531195
+1996-08-25,Cats,Winter Garden,Musical,87,467966
+1996-09-01,Cats,Winter Garden,Musical,82,444636
+1996-09-08,Cats,Winter Garden,Musical,62,327568
+1996-09-15,Cats,Winter Garden,Musical,69,367013
+1996-09-22,Cats,Winter Garden,Musical,70,376787
+1996-09-29,Cats,Winter Garden,Musical,71,380424
+1996-10-06,Cats,Winter Garden,Musical,70,372459
+1996-10-13,Cats,Winter Garden,Musical,76,422438
+1996-10-20,Cats,Winter Garden,Musical,80,425648
+1996-10-27,Cats,Winter Garden,Musical,72,376197
+1996-11-03,Cats,Winter Garden,Musical,68,356674
+1996-11-10,Cats,Winter Garden,Musical,72,381167
+1996-11-10,God Said "Ha",Lyceum,Play,29,28729
+1996-11-17,Cats,Winter Garden,Musical,66,353578
+1996-11-17,God Said "Ha",Lyceum,Play,44,42727
+1996-11-24,Cats,Winter Garden,Musical,63,322883
+1996-11-24,God Said "Ha",Lyceum,Play,39,62763
+1996-12-01,Cats,Winter Garden,Musical,84,512812
+1996-12-01,God Said "Ha",Lyceum,Play,30,69218
+1996-12-08,Cats,Winter Garden,Musical,86,447709
+1996-12-08,God Said "Ha",Lyceum,Play,58,82873
+1996-12-15,Cats,Winter Garden,Musical,86,435913
+1996-12-22,Cats,Winter Garden,Musical,90,439188
+1996-12-29,Cats,Winter Garden,Musical,99,727685
+1997-01-05,Cats,Winter Garden,Musical,94,582953
+1997-01-12,Cats,Winter Garden,Musical,77,357368
+1997-01-19,Cats,Winter Garden,Musical,79,380914
+1997-01-26,Cats,Winter Garden,Musical,64,298127
+1997-02-02,Cats,Winter Garden,Musical,69,326988
+1997-02-09,Cats,Winter Garden,Musical,59,290172
+1997-02-16,Cats,Winter Garden,Musical,78,446264
+1997-02-23,Cats,Winter Garden,Musical,90,411664
+1997-03-02,Cats,Winter Garden,Musical,61,308091
+1997-03-02,Mandy Patinkin,Lyceum,Special,93,76833
+1997-03-09,Cats,Winter Garden,Musical,76,368466
+1997-03-09,Mandy Patinkin,Lyceum,Special,79,169567
+1997-03-16,Cats,Winter Garden,Musical,85,413899
+1997-03-16,Mandy Patinkin,Lyceum,Special,89,148764
+1997-03-23,Cats,Winter Garden,Musical,77,405661
+1997-03-23,Mandy Patinkin,Lyceum,Special,77,168463
+1997-03-30,Cats,Winter Garden,Musical,100,559440
+1997-04-06,Cats,Winter Garden,Musical,93,488745
+1997-04-06,The Gin Game,Lyceum,Play,19,18228
+1997-04-13,Cats,Winter Garden,Musical,73,364068
+1997-04-13,The Gin Game,Lyceum,Play,20,37396
+1997-04-20,Cats,Winter Garden,Musical,77,399311
+1997-04-20,The Gin Game,Lyceum,Play,40,66675
+1997-04-27,Cats,Winter Garden,Musical,85,450862
+1997-04-27,The Gin Game,Lyceum,Play,72,138312
+1997-05-04,Cats,Winter Garden,Musical,78,395089
+1997-05-04,The Gin Game,Lyceum,Play,72,134149
+1997-05-11,Cats,Winter Garden,Musical,68,344335
+1997-05-11,The Gin Game,Lyceum,Play,53,114127
+1997-05-18,Cats,Winter Garden,Musical,77,386344
+1997-05-18,The Gin Game,Lyceum,Play,47,123302
+1997-05-25,Cats,Winter Garden,Musical,78,413522
+1997-05-25,The Gin Game,Lyceum,Play,54,116220
+1997-06-01,Cats,Winter Garden,Musical,66,339514
+1997-06-01,The Gin Game,Lyceum,Play,46,100291
+1997-06-08,Cats,Winter Garden,Musical,74,380488
+1997-06-08,The Gin Game,Lyceum,Play,43,103434
+1997-06-15,Cats,Winter Garden,Musical,68,356804
+1997-06-15,The Gin Game,Lyceum,Play,47,100130
+1997-06-22,Cats,Winter Garden,Musical,78,388385
+1997-06-22,The Gin Game,Lyceum,Play,51,104020
+1997-06-29,Cats,Winter Garden,Musical,89,485469
+1997-06-29,The Gin Game,Lyceum,Play,53,107271
+1997-07-06,Cats,Winter Garden,Musical,82,443137
+1997-07-13,Cats,Winter Garden,Musical,86,472010
+1997-07-13,The Gin Game,Lyceum,Play,63,108306
+1997-07-20,Cats,Winter Garden,Musical,89,482901
+1997-07-20,The Gin Game,Lyceum,Play,58,107907
+1997-07-27,Cats,Winter Garden,Musical,92,514635
+1997-07-27,The Gin Game,Lyceum,Play,53,105463
+1997-08-03,Cats,Winter Garden,Musical,95,537955
+1997-08-03,The Gin Game,Lyceum,Play,59,111129
+1997-08-10,Cats,Winter Garden,Musical,98,547581
+1997-08-10,The Gin Game,Lyceum,Play,65,121336
+1997-08-17,Cats,Winter Garden,Musical,98,559582
+1997-08-17,The Gin Game,Lyceum,Play,70,127759
+1997-08-24,Cats,Winter Garden,Musical,92,517910
+1997-08-24,The Gin Game,Lyceum,Play,70,133913
+1997-08-31,Cats,Winter Garden,Musical,92,511381
+1997-08-31,The Gin Game,Lyceum,Play,80,181169
+1997-09-07,Cats,Winter Garden,Musical,60,324850
+1997-09-14,Cats,Winter Garden,Musical,68,378942
+1997-09-21,Cats,Winter Garden,Musical,69,385722
+1997-09-28,Cats,Winter Garden,Musical,69,375360
+1997-10-05,Cats,Winter Garden,Musical,70,382906
+1997-10-12,Cats,Winter Garden,Musical,76,432974
+1997-10-19,Cats,Winter Garden,Musical,79,438723
+1997-10-26,Cats,Winter Garden,Musical,76,403065
+1997-11-02,Cats,Winter Garden,Musical,65,348112
+1997-11-09,Cats,Winter Garden,Musical,69,374778
+1997-11-16,Cats,Winter Garden,Musical,69,367210
+1997-11-23,Cats,Winter Garden,Musical,60,323896
+1997-11-30,Cats,Winter Garden,Musical,90,555915
+1997-11-30,The Sunshine Boys,Lyceum,Play,56,77073
+1997-12-07,Cats,Winter Garden,Musical,82,450053
+1997-12-07,The Sunshine Boys,Lyceum,Play,50,143825
+1997-12-14,Cats,Winter Garden,Musical,83,454827
+1997-12-14,The Sunshine Boys,Lyceum,Play,65,184464
+1997-12-21,Cats,Winter Garden,Musical,82,450454
+1997-12-21,The Sunshine Boys,Lyceum,Play,52,146374
+1997-12-28,Cats,Winter Garden,Musical,99,633124
+1997-12-28,The Sunshine Boys,Lyceum,Play,74,227594
+1998-01-04,Cats,Winter Garden,Musical,98,671440
+1998-01-04,The Sunshine Boys,Lyceum,Play,80,246576
+1998-01-11,Cats,Winter Garden,Musical,70,354526
+1998-01-11,The Sunshine Boys,Lyceum,Play,72,203401
+1998-01-18,Cats,Winter Garden,Musical,74,379684
+1998-01-18,The Sunshine Boys,Lyceum,Play,72,206622
+1998-01-25,Cats,Winter Garden,Musical,60,293084
+1998-01-25,The Sunshine Boys,Lyceum,Play,56,179012
+1998-02-01,Cats,Winter Garden,Musical,53,259354
+1998-02-01,The Sunshine Boys,Lyceum,Play,59,180645
+1998-02-08,Cats,Winter Garden,Musical,50,247806
+1998-02-08,The Sunshine Boys,Lyceum,Play,51,152787
+1998-02-15,Cats,Winter Garden,Musical,76,437190
+1998-02-15,The Sunshine Boys,Lyceum,Play,62,201539
+1998-02-22,Cats,Winter Garden,Musical,86,430227
+1998-02-22,The Sunshine Boys,Lyceum,Play,64,185766
+1998-03-01,Cats,Winter Garden,Musical,62,319420
+1998-03-01,The Sunshine Boys,Lyceum,Play,51,156605
+1998-03-08,Cats,Winter Garden,Musical,66,335067
+1998-03-08,The Sunshine Boys,Lyceum,Play,55,161279
+1998-03-15,Cats,Winter Garden,Musical,78,401255
+1998-03-15,The Sunshine Boys,Lyceum,Play,53,156724
+1998-03-22,Cats,Winter Garden,Musical,85,444476
+1998-03-22,The Sunshine Boys,Lyceum,Play,56,165614
+1998-03-29,Cats,Winter Garden,Musical,82,434582
+1998-03-29,The Sunshine Boys,Lyceum,Play,64,187361
+1998-04-05,Cats,Winter Garden,Musical,75,383184
+1998-04-05,The Sunshine Boys,Lyceum,Play,52,150012
+1998-04-12,Cats,Winter Garden,Musical,96,535375
+1998-04-12,The Sunshine Boys,Lyceum,Play,46,132872
+1998-04-19,Cats,Winter Garden,Musical,98,548023
+1998-04-19,The Sunshine Boys,Lyceum,Play,72,209556
+1998-04-26,Cats,Winter Garden,Musical,84,439157
+1998-04-26,The Sunshine Boys,Lyceum,Play,61,135791
+1998-05-03,Cats,Winter Garden,Musical,75,383681
+1998-05-03,The Sunshine Boys,Lyceum,Play,45,139623
+1998-05-10,Cats,Winter Garden,Musical,69,362642
+1998-05-10,The Sunshine Boys,Lyceum,Play,42,131040
+1998-05-17,Cats,Winter Garden,Musical,69,361669
+1998-05-17,The Sunshine Boys,Lyceum,Play,52,146961
+1998-05-24,Cats,Winter Garden,Musical,75,399102
+1998-05-24,The Sunshine Boys,Lyceum,Play,64,152898
+1998-05-31,Cats,Winter Garden,Musical,66,330376
+1998-05-31,The Sunshine Boys,Lyceum,Play,48,112675
+1998-06-07,Cats,Winter Garden,Musical,71,362877
+1998-06-07,The Sunshine Boys,Lyceum,Play,41,112075
+1998-06-14,Cats,Winter Garden,Musical,81,421552
+1998-06-14,The Sunshine Boys,Lyceum,Play,46,121512
+1998-06-21,Cats,Winter Garden,Musical,81,420963
+1998-06-21,The Sunshine Boys,Lyceum,Play,58,138870
+1998-06-28,Cats,Winter Garden,Musical,81,434584
+1998-06-28,The Sunshine Boys,Lyceum,Play,67,176681
+1998-07-05,Cats,Winter Garden,Musical,73,384680
+1998-07-12,Cats,Winter Garden,Musical,78,426060
+1998-07-19,Cats,Winter Garden,Musical,82,446645
+1998-07-26,Cats,Winter Garden,Musical,83,447362
+1998-08-02,Cats,Winter Garden,Musical,89,481003
+1998-08-09,Cats,Winter Garden,Musical,90,485807
+1998-08-16,Cats,Winter Garden,Musical,91,516557
+1998-08-23,Cats,Winter Garden,Musical,88,475227
+1998-08-30,Cats,Winter Garden,Musical,77,413805
+1998-09-06,Cats,Winter Garden,Musical,69,375544
+1998-09-13,Cats,Winter Garden,Musical,60,323039
+1998-09-20,Cats,Winter Garden,Musical,62,332734
+1998-09-27,Cats,Winter Garden,Musical,63,339649
+1998-10-04,Cats,Winter Garden,Musical,67,351606
+1998-10-11,Cats,Winter Garden,Musical,81,450250
+1998-10-18,Cats,Winter Garden,Musical,74,408164
+1998-10-25,Cats,Winter Garden,Musical,69,375172
+1998-11-01,Cats,Winter Garden,Musical,56,289028
+1998-11-08,Cats,Winter Garden,Musical,61,331894
+1998-11-15,Cats,Winter Garden,Musical,73,395154
+1998-11-22,Cats,Winter Garden,Musical,59,318321
+1998-11-29,Cats,Winter Garden,Musical,85,539119
+1998-12-06,Cats,Winter Garden,Musical,80,423982
+1998-12-13,Cats,Winter Garden,Musical,76,405851
+1998-12-20,Cats,Winter Garden,Musical,74,399367
+1998-12-27,Cats,Winter Garden,Musical,84,532694
+1999-01-03,Cats,Winter Garden,Musical,97,670573
+1999-01-10,Cats,Winter Garden,Musical,74,377393
+1999-01-17,Cats,Winter Garden,Musical,63,329216
+1999-01-24,Cats,Winter Garden,Musical,55,282953
+1999-01-31,Cats,Winter Garden,Musical,50,245291
+1999-02-07,Cats,Winter Garden,Musical,43,220083
+1999-02-07,Night Must Fall,Lyceum,Play,56,113381
+1999-02-14,Cats,Winter Garden,Musical,64,370077
+1999-02-14,Night Must Fall,Lyceum,Play,75,155941
+1999-02-21,Cats,Winter Garden,Musical,82,416436
+1999-02-21,Night Must Fall,Lyceum,Play,71,146936
+1999-02-28,Cats,Winter Garden,Musical,50,265736
+1999-02-28,Night Must Fall,Lyceum,Play,61,146512
+1999-03-07,Cats,Winter Garden,Musical,56,291697
+1999-03-07,Night Must Fall,Lyceum,Play,64,140702
+1999-03-14,Cats,Winter Garden,Musical,67,347022
+1999-03-14,Night Must Fall,Lyceum,Play,73,170130
+1999-03-21,Cats,Winter Garden,Musical,71,399503
+1999-03-21,Night Must Fall,Lyceum,Play,73,165523
+1999-03-28,Cats,Winter Garden,Musical,72,394096
+1999-03-28,Night Must Fall,Lyceum,Play,64,172355
+1999-04-04,Cats,Winter Garden,Musical,92,531793
+1999-04-04,Night Must Fall,Lyceum,Play,58,163283
+1999-04-11,Cats,Winter Garden,Musical,91,515221
+1999-04-11,Night Must Fall,Lyceum,Play,70,202934
+1999-04-18,Cats,Winter Garden,Musical,65,341258
+1999-04-25,Cats,Winter Garden,Musical,70,386426
+1999-04-25,The Lonesome West,Lyceum,Play,38,60393
+1999-05-02,Cats,Winter Garden,Musical,60,324141
+1999-05-02,The Lonesome West,Lyceum,Play,28,59696
+1999-05-09,Cats,Winter Garden,Musical,60,321911
+1999-05-09,The Lonesome West,Lyceum,Play,42,95955
+1999-05-16,Cats,Winter Garden,Musical,62,337278
+1999-05-16,The Lonesome West,Lyceum,Play,45,105731
+1999-05-23,Cats,Winter Garden,Musical,65,359380
+1999-05-23,The Lonesome West,Lyceum,Play,37,92698
+1999-05-30,Cats,Winter Garden,Musical,68,373463
+1999-05-30,The Lonesome West,Lyceum,Play,39,95050
+1999-06-06,Cats,Winter Garden,Musical,59,316221
+1999-06-06,The Lonesome West,Lyceum,Play,18,41941
+1999-06-13,Cats,Winter Garden,Musical,56,303601
+1999-06-13,The Lonesome West,Lyceum,Play,28,67870
+1999-06-20,Cats,Winter Garden,Musical,61,324171
+1999-06-27,Cats,Winter Garden,Musical,71,395900
+1999-07-04,Cats,Winter Garden,Musical,67,363689
+1999-07-11,Cats,Winter Garden,Musical,66,377594
+1999-07-18,Cats,Winter Garden,Musical,68,377635
+1999-07-25,Cats,Winter Garden,Musical,75,425394
+1999-08-01,Cats,Winter Garden,Musical,76,428335
+1999-08-08,Cats,Winter Garden,Musical,79,443907
+1999-08-15,Cats,Winter Garden,Musical,84,474805
+1999-08-22,Cats,Winter Garden,Musical,83,464755
+1999-08-29,Cats,Winter Garden,Musical,72,406732
+1999-09-05,Cats,Winter Garden,Musical,74,418180
+1999-09-12,Cats,Winter Garden,Musical,61,350368
+1999-09-19,Cats,Winter Garden,Musical,59,332290
+1999-09-26,Cats,Winter Garden,Musical,59,341052
+1999-10-03,Cats,Winter Garden,Musical,58,325330
+1999-10-10,Cats,Winter Garden,Musical,72,424706
+1999-10-17,Cats,Winter Garden,Musical,72,405029
+1999-10-24,Cats,Winter Garden,Musical,70,390236
+1999-10-31,Cats,Winter Garden,Musical,52,292024
+1999-11-07,Cats,Winter Garden,Musical,56,324741
+1999-11-14,Cats,Winter Garden,Musical,64,364468
+1999-11-21,Cats,Winter Garden,Musical,53,303501
+1999-11-28,Cats,Winter Garden,Musical,86,556665
+1999-12-05,Cats,Winter Garden,Musical,65,354448
+1999-12-12,Cats,Winter Garden,Musical,75,404491
+1999-12-19,Cats,Winter Garden,Musical,59,341681
+1999-12-26,Cats,Winter Garden,Musical,54,335317
+2000-01-02,Cats,Winter Garden,Musical,79,514784
+2000-01-09,Cats,Winter Garden,Musical,54,307890
+2000-01-16,Cats,Winter Garden,Musical,62,310988
+2000-01-23,Cats,Winter Garden,Musical,47,244369
+2000-01-30,Cats,Winter Garden,Musical,46,229414
+2000-02-06,Cats,Winter Garden,Musical,47,236115
+2000-02-13,Cats,Winter Garden,Musical,50,275627
+2000-02-20,Cats,Winter Garden,Musical,61,338490
+2000-02-27,Cats,Winter Garden,Musical,88,495900
+2000-03-05,Cats,Winter Garden,Musical,73,397737
+2000-03-12,Cats,Winter Garden,Musical,87,468280
+2000-03-19,Cats,Winter Garden,Musical,97,563412
+2000-03-26,Cats,Winter Garden,Musical,94,579052
+2000-04-02,Cats,Winter Garden,Musical,95,585919
+2000-04-02,Rose,Lyceum,Play,65,103822
+2000-04-09,Cats,Winter Garden,Musical,91,560531
+2000-04-09,Rose,Lyceum,Play,78,140919
+2000-04-16,Cats,Winter Garden,Musical,92,577023
+2000-04-16,Rose,Lyceum,Play,77,143133
+2000-04-23,Cats,Winter Garden,Musical,99,670335
+2000-04-23,Rose,Lyceum,Play,82,159159
+2000-04-30,Cats,Winter Garden,Musical,100,658822
+2000-04-30,Rose,Lyceum,Play,85,164755
+2000-05-07,Cats,Winter Garden,Musical,97,635639
+2000-05-07,Rose,Lyceum,Play,82,171413
+2000-05-14,Cats,Winter Garden,Musical,95,623447
+2000-05-14,Rose,Lyceum,Play,85,172543
+2000-05-21,Cats,Winter Garden,Musical,98,639553
+2000-05-21,Rose,Lyceum,Play,85,174851
+2000-05-28,Cats,Winter Garden,Musical,99,639363
+2000-06-04,Cats,Winter Garden,Musical,99,638408
+2000-06-11,Cats,Winter Garden,Musical,100,641213
+2000-06-18,Cats,Winter Garden,Musical,100,642219
+2000-06-25,Cats,Winter Garden,Musical,100,699916
+2000-07-02,Cats,Winter Garden,Musical,89,552519
+2000-07-09,Cats,Winter Garden,Musical,85,529418
+2000-07-16,Cats,Winter Garden,Musical,87,542848
+2000-07-23,Cats,Winter Garden,Musical,89,573144
+2000-07-30,Cats,Winter Garden,Musical,91,579991
+2000-08-06,Cats,Winter Garden,Musical,93,592320
+2000-08-13,Cats,Winter Garden,Musical,98,643905
+2000-08-20,Cats,Winter Garden,Musical,99,667066
+2000-08-27,Cats,Winter Garden,Musical,98,659056
+2000-09-03,Cats,Winter Garden,Musical,97,676825
+2000-09-10,Cats,Winter Garden,Musical,72,506061
+2001-03-04,The Invention Of Love,Lyceum,Play,84,96135
+2001-03-11,The Invention Of Love,Lyceum,Play,85,191341
+2001-03-18,The Invention Of Love,Lyceum,Play,88,203602
+2001-03-25,The Invention Of Love,Lyceum,Play,81,188933
+2001-04-01,The Invention Of Love,Lyceum,Play,79,194828
+2001-04-08,The Invention Of Love,Lyceum,Play,81,209591
+2001-04-15,The Invention Of Love,Lyceum,Play,92,239491
+2001-04-22,The Invention Of Love,Lyceum,Play,85,235406
+2001-04-29,The Invention Of Love,Lyceum,Play,85,237027
+2001-05-06,The Invention Of Love,Lyceum,Play,78,214155
+2001-05-13,The Invention Of Love,Lyceum,Play,80,221452
+2001-05-20,The Invention Of Love,Lyceum,Play,88,241990
+2001-05-27,The Invention Of Love,Lyceum,Play,92,249148
+2001-06-03,The Invention Of Love,Lyceum,Play,68,189974
+2001-06-10,The Invention Of Love,Lyceum,Play,70,218438
+2001-06-17,The Invention Of Love,Lyceum,Play,75,229161
+2001-06-24,The Invention Of Love,Lyceum,Play,86,259172
+2001-07-01,The Invention Of Love,Lyceum,Play,96,299018
+2001-10-07,Mamma Mia!,Winter Garden,Musical,100,470275
+2001-10-14,Mamma Mia!,Winter Garden,Musical,94,657205
+2001-10-21,Mamma Mia!,Winter Garden,Musical,83,656024
+2001-10-28,Mamma Mia!,Winter Garden,Musical,96,848882
+2001-11-04,Mamma Mia!,Winter Garden,Musical,100,880403
+2001-11-11,Mamma Mia!,Winter Garden,Musical,101,903804
+2001-11-18,Mamma Mia!,Winter Garden,Musical,101,882053
+2001-11-25,Mamma Mia!,Winter Garden,Musical,102,946975
+2001-12-02,Mamma Mia!,Winter Garden,Musical,101,938294
+2001-12-09,Mamma Mia!,Winter Garden,Musical,102,894098
+2001-12-16,Mamma Mia!,Winter Garden,Musical,101,907903
+2001-12-23,Mamma Mia!,Winter Garden,Musical,101,933589
+2001-12-30,Mamma Mia!,Winter Garden,Musical,102,962801
+2002-01-06,Mamma Mia!,Winter Garden,Musical,101,1083000
+2002-01-13,Mamma Mia!,Winter Garden,Musical,99,996810
+2002-01-20,Mamma Mia!,Winter Garden,Musical,99,996370
+2002-01-27,Mamma Mia!,Winter Garden,Musical,100,1010114
+2002-02-03,Mamma Mia!,Winter Garden,Musical,97,983612
+2002-02-10,Mamma Mia!,Winter Garden,Musical,97,981665
+2002-02-17,Mamma Mia!,Winter Garden,Musical,97,981103
+2002-02-24,Mamma Mia!,Winter Garden,Musical,101,1020457
+2002-03-03,Mamma Mia!,Winter Garden,Musical,95,961996
+2002-03-10,Mamma Mia!,Winter Garden,Musical,99,1000004
+2002-03-17,Mamma Mia!,Winter Garden,Musical,101,1003628
+2002-03-24,Mamma Mia!,Winter Garden,Musical,101,1017801
+2002-03-31,Mamma Mia!,Winter Garden,Musical,102,1018596
+2002-03-31,Morning'S At Seven,Lyceum,Play,37,39268
+2002-04-07,Mamma Mia!,Winter Garden,Musical,101,1023805
+2002-04-07,Morning'S At Seven,Lyceum,Play,47,109359
+2002-04-14,Mamma Mia!,Winter Garden,Musical,97,981749
+2002-04-14,Morning'S At Seven,Lyceum,Play,48,111267
+2002-04-21,Mamma Mia!,Winter Garden,Musical,101,999076
+2002-04-21,Morning'S At Seven,Lyceum,Play,48,111021
+2002-04-28,Mamma Mia!,Winter Garden,Musical,100,1005868
+2002-04-28,Morning'S At Seven,Lyceum,Play,63,168695
+2002-05-05,Mamma Mia!,Winter Garden,Musical,98,985091
+2002-05-05,Morning'S At Seven,Lyceum,Play,71,193035
+2002-05-12,Morning'S At Seven,Lyceum,Play,70,193342
+2002-05-19,Morning'S At Seven,Lyceum,Play,79,213783
+2002-05-26,Morning'S At Seven,Lyceum,Play,75,210782
+2002-06-02,Morning'S At Seven,Lyceum,Play,78,213831
+2002-06-09,Morning'S At Seven,Lyceum,Play,85,231780
+2002-06-16,Morning'S At Seven,Lyceum,Play,84,227759
+2002-06-23,Morning'S At Seven,Lyceum,Play,48,133900
+2002-06-30,Morning'S At Seven,Lyceum,Play,44,117960
+2002-07-07,Morning'S At Seven,Lyceum,Play,34,84235
+2002-07-14,Morning'S At Seven,Lyceum,Play,40,119383
+2002-07-21,Morning'S At Seven,Lyceum,Play,43,123825
+2002-07-28,Morning'S At Seven,Lyceum,Play,57,163115
+2003-03-09,The Play What I Wrote,Lyceum,Play,91,6893
+2003-03-16,The Play What I Wrote,Lyceum,Play,45,96449
+2003-03-23,The Play What I Wrote,Lyceum,Play,63,155198
+2003-03-30,The Play What I Wrote,Lyceum,Play,64,158910
+2003-04-06,The Play What I Wrote,Lyceum,Play,70,196205
+2003-04-13,The Play What I Wrote,Lyceum,Play,50,175780
+2003-04-20,The Play What I Wrote,Lyceum,Play,51,186143
+2003-04-27,The Play What I Wrote,Lyceum,Play,61,217397
+2003-05-04,The Play What I Wrote,Lyceum,Play,46,161571
+2003-05-11,The Play What I Wrote,Lyceum,Play,58,188138
+2003-05-18,The Play What I Wrote,Lyceum,Play,67,205793
+2003-05-25,The Play What I Wrote,Lyceum,Play,75,232391
+2003-06-01,The Play What I Wrote,Lyceum,Play,63,192846
+2003-06-08,The Play What I Wrote,Lyceum,Play,52,163325
+2003-06-15,The Play What I Wrote,Lyceum,Play,61,193912
+2003-11-16,I Am My Own Wife,Lyceum,Play,49,93243
+2003-11-23,I Am My Own Wife,Lyceum,Play,51,102395
+2003-11-30,I Am My Own Wife,Lyceum,Play,31,67851
+2003-12-07,I Am My Own Wife,Lyceum,Play,43,94859
+2003-12-14,I Am My Own Wife,Lyceum,Play,54,148242
+2003-12-21,I Am My Own Wife,Lyceum,Play,61,153362
+2003-12-28,I Am My Own Wife,Lyceum,Play,71,204551
+2004-01-04,I Am My Own Wife,Lyceum,Play,74,198140
+2004-01-11,I Am My Own Wife,Lyceum,Play,80,186047
+2004-01-18,I Am My Own Wife,Lyceum,Play,80,196115
+2004-01-25,I Am My Own Wife,Lyceum,Play,72,174355
+2004-02-01,I Am My Own Wife,Lyceum,Play,69,163576
+2004-02-08,I Am My Own Wife,Lyceum,Play,67,159361
+2004-02-15,I Am My Own Wife,Lyceum,Play,75,160848
+2004-02-22,I Am My Own Wife,Lyceum,Play,63,151256
+2004-02-29,I Am My Own Wife,Lyceum,Play,59,95252
+2004-03-07,I Am My Own Wife,Lyceum,Play,56,149473
+2004-03-14,I Am My Own Wife,Lyceum,Play,63,144977
+2004-03-21,I Am My Own Wife,Lyceum,Play,57,152662
+2004-03-28,I Am My Own Wife,Lyceum,Play,62,161887
+2004-04-04,I Am My Own Wife,Lyceum,Play,44,121676
+2004-04-11,I Am My Own Wife,Lyceum,Play,59,170337
+2004-04-18,I Am My Own Wife,Lyceum,Play,55,140767
+2004-04-25,I Am My Own Wife,Lyceum,Play,54,154591
+2004-05-02,I Am My Own Wife,Lyceum,Play,54,150375
+2004-05-09,I Am My Own Wife,Lyceum,Play,57,151736
+2004-05-16,I Am My Own Wife,Lyceum,Play,58,163472
+2004-05-23,I Am My Own Wife,Lyceum,Play,65,184076
+2004-05-23,Marc Salem'S Mind Games,Lyceum,Special,337,1037
+2004-05-30,I Am My Own Wife,Lyceum,Play,53,148058
+2004-05-30,Marc Salem'S Mind Games,Lyceum,Special,716,1929
+2004-06-06,I Am My Own Wife,Lyceum,Play,53,151099
+2004-06-06,Marc Salem'S Mind Games,Lyceum,Special,22,5414
+2004-06-13,I Am My Own Wife,Lyceum,Play,81,228710
+2004-06-13,Marc Salem'S Mind Games,Lyceum,Special,33,8933
+2004-06-20,I Am My Own Wife,Lyceum,Play,85,206545
+2004-06-20,Marc Salem'S Mind Games,Lyceum,Special,43,14486
+2004-06-27,I Am My Own Wife,Lyceum,Play,85,247588
+2004-06-27,Marc Salem'S Mind Games,Lyceum,Special,56,15970
+2004-07-04,I Am My Own Wife,Lyceum,Play,65,189542
+2004-07-04,Marc Salem'S Mind Games,Lyceum,Special,73,18244
+2004-07-11,I Am My Own Wife,Lyceum,Play,76,200886
+2004-07-11,Marc Salem'S Mind Games,Lyceum,Special,31,8238
+2004-07-18,I Am My Own Wife,Lyceum,Play,76,230620
+2004-07-18,Marc Salem'S Mind Games,Lyceum,Special,59,16225
+2004-07-25,I Am My Own Wife,Lyceum,Play,79,238229
+2004-07-25,Marc Salem'S Mind Games,Lyceum,Special,65,17449
+2004-08-01,I Am My Own Wife,Lyceum,Play,63,196935
+2004-08-08,I Am My Own Wife,Lyceum,Play,63,170882
+2004-08-15,I Am My Own Wife,Lyceum,Play,59,186347
+2004-08-15,Marc Salem'S Mind Games,Lyceum,Special,69,19555
+2004-08-22,I Am My Own Wife,Lyceum,Play,55,165668
+2004-08-22,Marc Salem'S Mind Games,Lyceum,Special,74,23528
+2004-08-29,I Am My Own Wife,Lyceum,Play,42,124937
+2004-08-29,Marc Salem'S Mind Games,Lyceum,Special,67,18637
+2004-09-05,Marc Salem'S Mind Games,Lyceum,Special,14,35823
+2004-09-12,I Am My Own Wife,Lyceum,Play,74,182807
+2004-09-12,Marc Salem'S Mind Games,Lyceum,Special,21,7237
+2004-09-19,I Am My Own Wife,Lyceum,Play,64,191114
+2004-09-19,Marc Salem'S Mind Games,Lyceum,Special,28,8651
+2004-09-26,I Am My Own Wife,Lyceum,Play,68,185652
+2004-09-26,Marc Salem'S Mind Games,Lyceum,Special,20,7809
+2004-10-03,I Am My Own Wife,Lyceum,Play,74,220626
+2004-10-03,Marc Salem'S Mind Games,Lyceum,Special,10,3668
+2004-10-10,I Am My Own Wife,Lyceum,Play,82,245612
+2004-10-10,Marc Salem'S Mind Games,Lyceum,Special,17,6790
+2004-10-17,I Am My Own Wife,Lyceum,Play,93,178000
+2004-10-17,Marc Salem'S Mind Games,Lyceum,Special,35,12339
+2004-10-24,I Am My Own Wife,Lyceum,Play,90,294032
+2004-10-31,I Am My Own Wife,Lyceum,Play,85,269191
+2004-10-31,Marc Salem'S Mind Games,Lyceum,Special,25,7484
+2004-11-07,Whoopi,Lyceum,Play,61,103879
+2004-11-14,Marc Salem'S Mind Games,Lyceum,Special,31,8822
+2004-11-14,Whoopi,Lyceum,Play,65,187957
+2004-11-21,Marc Salem'S Mind Games,Lyceum,Special,27,8978
+2004-11-21,Whoopi,Lyceum,Play,64,189248
+2004-11-28,Marc Salem'S Mind Games,Lyceum,Special,35,10651
+2004-11-28,Whoopi,Lyceum,Play,66,226970
+2004-12-05,Whoopi,Lyceum,Play,83,263743
+2004-12-12,Whoopi,Lyceum,Play,82,105353
+2004-12-19,Whoopi,Lyceum,Play,51,187895
+2004-12-26,Whoopi,Lyceum,Play,46,142201
+2005-01-02,Whoopi,Lyceum,Play,69,279222
+2005-01-09,Whoopi,Lyceum,Play,56,199240
+2005-01-16,Whoopi,Lyceum,Play,71,231438
+2005-01-23,Whoopi,Lyceum,Play,55,189230
+2005-01-30,Whoopi,Lyceum,Play,77,277913
+2005-03-20,Steel Magnolias,Lyceum,Play,59,235965
+2005-03-27,Steel Magnolias,Lyceum,Play,60,205202
+2005-04-03,Steel Magnolias,Lyceum,Play,63,258646
+2005-04-10,Steel Magnolias,Lyceum,Play,58,240769
+2005-04-17,Steel Magnolias,Lyceum,Play,64,282837
+2005-04-24,Steel Magnolias,Lyceum,Play,52,221659
+2005-05-01,Steel Magnolias,Lyceum,Play,47,209009
+2005-05-08,Steel Magnolias,Lyceum,Play,44,209872
+2005-05-15,Steel Magnolias,Lyceum,Play,49,226152
+2005-05-22,Steel Magnolias,Lyceum,Play,52,231067
+2005-05-29,Steel Magnolias,Lyceum,Play,48,196420
+2005-06-05,Steel Magnolias,Lyceum,Play,47,202112
+2005-06-12,Steel Magnolias,Lyceum,Play,52,226706
+2005-06-19,Steel Magnolias,Lyceum,Play,41,174344
+2005-06-26,Steel Magnolias,Lyceum,Play,47,199789
+2005-07-03,Steel Magnolias,Lyceum,Play,44,159937
+2005-07-10,Steel Magnolias,Lyceum,Play,35,139918
+2005-07-17,Steel Magnolias,Lyceum,Play,40,160040
+2005-07-24,Steel Magnolias,Lyceum,Play,44,168672
+2005-07-31,Steel Magnolias,Lyceum,Play,51,190506
+2005-10-30,Souvenir,Lyceum,Play,42,35634
+2005-11-06,Souvenir,Lyceum,Play,35,76688
+2005-11-13,Souvenir,Lyceum,Play,42,98180
+2005-11-20,Souvenir,Lyceum,Play,35,80495
+2005-11-27,Souvenir,Lyceum,Play,29,71526
+2005-12-04,Souvenir,Lyceum,Play,27,74252
+2005-12-11,Souvenir,Lyceum,Play,38,88863
+2005-12-18,Souvenir,Lyceum,Play,36,79992
+2005-12-25,Souvenir,Lyceum,Play,20,49012
+2006-01-01,Souvenir,Lyceum,Play,59,149965
+2006-01-08,Souvenir,Lyceum,Play,54,141328
+2006-04-23,The Lieutenant Of Inishmore,Lyceum,Play,59,155784
+2006-04-30,The Lieutenant Of Inishmore,Lyceum,Play,49,165186
+2006-05-07,The Lieutenant Of Inishmore,Lyceum,Play,35,127727
+2006-05-14,The Lieutenant Of Inishmore,Lyceum,Play,54,191894
+2006-05-21,The Lieutenant Of Inishmore,Lyceum,Play,74,213190
+2006-05-28,The Lieutenant Of Inishmore,Lyceum,Play,72,212797
+2006-06-04,The Lieutenant Of Inishmore,Lyceum,Play,75,212182
+2006-06-11,The Lieutenant Of Inishmore,Lyceum,Play,69,222381
+2006-06-18,The Lieutenant Of Inishmore,Lyceum,Play,63,213761
+2006-06-25,The Lieutenant Of Inishmore,Lyceum,Play,59,200931
+2006-07-02,The Lieutenant Of Inishmore,Lyceum,Play,65,204765
+2006-07-09,The Lieutenant Of Inishmore,Lyceum,Play,59,183132
+2006-07-16,The Lieutenant Of Inishmore,Lyceum,Play,65,211753
+2006-07-23,The Lieutenant Of Inishmore,Lyceum,Play,64,203419
+2006-07-30,The Lieutenant Of Inishmore,Lyceum,Play,63,197644
+2006-08-06,The Lieutenant Of Inishmore,Lyceum,Play,52,162885
+2006-08-13,The Lieutenant Of Inishmore,Lyceum,Play,53,170734
+2006-08-20,The Lieutenant Of Inishmore,Lyceum,Play,48,155177
+2006-08-27,The Lieutenant Of Inishmore,Lyceum,Play,48,151360
+2006-09-03,The Lieutenant Of Inishmore,Lyceum,Play,73,251405
+2006-12-31,Mamma Mia!,Winter Garden,Musical,100,1478292
+2007-01-07,Mamma Mia!,Winter Garden,Musical,93,895165
+2007-01-14,Mamma Mia!,Winter Garden,Musical,92,854716
+2007-01-21,Mamma Mia!,Winter Garden,Musical,82,733314
+2007-01-28,Mamma Mia!,Winter Garden,Musical,85,757226
+2007-02-04,Mamma Mia!,Winter Garden,Musical,80,675734
+2007-02-11,Mamma Mia!,Winter Garden,Musical,82,716971
+2007-02-18,Mamma Mia!,Winter Garden,Musical,90,895045
+2007-02-25,Mamma Mia!,Winter Garden,Musical,100,892251
+2007-03-04,Mamma Mia!,Winter Garden,Musical,90,777664
+2007-03-11,Mamma Mia!,Winter Garden,Musical,94,850051
+2007-03-18,Mamma Mia!,Winter Garden,Musical,98,867128
+2007-03-25,Inherit The Wind 07,Lyceum,Play,74,355133
+2007-03-25,Mamma Mia!,Winter Garden,Musical,96,872165
+2007-04-01,Inherit The Wind 07,Lyceum,Play,79,394183
+2007-04-01,Mamma Mia!,Winter Garden,Musical,97,907245
+2007-04-08,Inherit The Wind 07,Lyceum,Play,83,416728
+2007-04-08,Mamma Mia!,Winter Garden,Musical,101,1051224
+2007-04-15,Inherit The Wind 07,Lyceum,Play,73,355075
+2007-04-15,Mamma Mia!,Winter Garden,Musical,100,962522
+2007-04-22,Inherit The Wind 07,Lyceum,Play,82,409140
+2007-04-22,Mamma Mia!,Winter Garden,Musical,98,900289
+2007-04-29,Inherit The Wind 07,Lyceum,Play,87,440785
+2007-04-29,Mamma Mia!,Winter Garden,Musical,100,918176
+2007-05-06,Inherit The Wind 07,Lyceum,Play,82,418827
+2007-05-06,Mamma Mia!,Winter Garden,Musical,99,905234
+2007-05-13,Inherit The Wind 07,Lyceum,Play,80,429207
+2007-05-13,Mamma Mia!,Winter Garden,Musical,100,924425
+2007-05-20,Inherit The Wind 07,Lyceum,Play,84,441356
+2007-05-20,Mamma Mia!,Winter Garden,Musical,101,950901
+2007-05-27,Inherit The Wind 07,Lyceum,Play,80,420200
+2007-05-27,Mamma Mia!,Winter Garden,Musical,101,926951
+2007-06-03,Inherit The Wind 07,Lyceum,Play,78,394963
+2007-06-03,Mamma Mia!,Winter Garden,Musical,97,848429
+2007-06-10,Inherit The Wind 07,Lyceum,Play,88,447668
+2007-06-10,Mamma Mia!,Winter Garden,Musical,100,913368
+2007-06-17,Inherit The Wind 07,Lyceum,Play,92,454022
+2007-06-17,Mamma Mia!,Winter Garden,Musical,97,870297
+2007-06-24,Inherit The Wind 07,Lyceum,Play,94,470073
+2007-06-24,Mamma Mia!,Winter Garden,Musical,100,904319
+2007-07-01,Inherit The Wind 07,Lyceum,Play,97,478375
+2007-07-01,Mamma Mia!,Winter Garden,Musical,99,883218
+2007-07-08,Inherit The Wind 07,Lyceum,Play,98,479551
+2007-07-08,Mamma Mia!,Winter Garden,Musical,97,877711
+2007-07-15,Mamma Mia!,Winter Garden,Musical,100,940187
+2007-07-22,Mamma Mia!,Winter Garden,Musical,100,935608
+2007-07-29,Mamma Mia!,Winter Garden,Musical,101,935954
+2007-08-05,Mamma Mia!,Winter Garden,Musical,101,947504
+2007-08-12,Mamma Mia!,Winter Garden,Musical,100,944430
+2007-08-19,Mamma Mia!,Winter Garden,Musical,100,927396
+2007-08-26,Mamma Mia!,Winter Garden,Musical,97,892772
+2007-09-02,Mamma Mia!,Winter Garden,Musical,99,917454
+2007-09-09,Mamma Mia!,Winter Garden,Musical,84,765506
+2007-09-16,Mamma Mia!,Winter Garden,Musical,90,832533
+2007-09-23,Mamma Mia!,Winter Garden,Musical,95,886228
+2007-09-30,Mamma Mia!,Winter Garden,Musical,92,887135
+2007-10-07,Mamma Mia!,Winter Garden,Musical,97,954077
+2007-10-14,Mamma Mia!,Winter Garden,Musical,98,971415
+2007-10-21,Mamma Mia!,Winter Garden,Musical,97,954385
+2007-10-28,Mamma Mia!,Winter Garden,Musical,97,951206
+2007-11-04,Mamma Mia!,Winter Garden,Musical,90,880667
+2007-11-11,Is He Dead?,Lyceum,Play,44,34151
+2007-11-11,Mamma Mia!,Winter Garden,Musical,94,413926
+2007-12-02,Is He Dead?,Lyceum,Play,28,52353
+2007-12-02,Mamma Mia!,Winter Garden,Musical,89,726789
+2007-12-09,Is He Dead?,Lyceum,Play,36,134217
+2007-12-09,Mamma Mia!,Winter Garden,Musical,90,906485
+2007-12-16,Is He Dead?,Lyceum,Play,55,202357
+2007-12-16,Mamma Mia!,Winter Garden,Musical,84,783366
+2007-12-23,Is He Dead?,Lyceum,Play,67,223732
+2007-12-23,Mamma Mia!,Winter Garden,Musical,88,844834
+2007-12-30,Is He Dead?,Lyceum,Play,52,250409
+2007-12-30,Mamma Mia!,Winter Garden,Musical,101,1422454
+2008-01-06,Is He Dead?,Lyceum,Play,62,216570
+2008-01-06,Mamma Mia!,Winter Garden,Musical,97,816353
+2008-01-13,Is He Dead?,Lyceum,Play,69,229137
+2008-01-13,Mamma Mia!,Winter Garden,Musical,81,704242
+2008-01-20,Is He Dead?,Lyceum,Play,66,232254
+2008-01-20,Mamma Mia!,Winter Garden,Musical,83,765173
+2008-01-27,Is He Dead?,Lyceum,Play,56,201245
+2008-01-27,Mamma Mia!,Winter Garden,Musical,75,643752
+2008-02-03,Is He Dead?,Lyceum,Play,44,165165
+2008-02-03,Mamma Mia!,Winter Garden,Musical,70,600571
+2008-02-10,Is He Dead?,Lyceum,Play,47,172872
+2008-02-10,Mamma Mia!,Winter Garden,Musical,82,686709
+2008-02-17,Is He Dead?,Lyceum,Play,56,209777
+2008-02-17,Mamma Mia!,Winter Garden,Musical,91,857250
+2008-02-24,Is He Dead?,Lyceum,Play,53,182931
+2008-02-24,Mamma Mia!,Winter Garden,Musical,88,759707
+2008-03-02,Is He Dead?,Lyceum,Play,44,157190
+2008-03-02,Mamma Mia!,Winter Garden,Musical,73,627264
+2008-03-09,Is He Dead?,Lyceum,Play,58,217690
+2008-03-09,Mamma Mia!,Winter Garden,Musical,80,693401
+2008-03-16,Mamma Mia!,Winter Garden,Musical,90,798906
+2008-03-23,Mamma Mia!,Winter Garden,Musical,101,1001740
+2008-03-30,Macbeth 08,Lyceum,Play,77,176719
+2008-03-30,Mamma Mia!,Winter Garden,Musical,100,926474
+2008-04-06,Macbeth 08,Lyceum,Play,76,371601
+2008-04-06,Mamma Mia!,Winter Garden,Musical,91,834761
+2008-04-13,Macbeth 08,Lyceum,Play,80,381988
+2008-04-13,Mamma Mia!,Winter Garden,Musical,96,875430
+2008-04-20,Macbeth 08,Lyceum,Play,86,473447
+2008-04-20,Mamma Mia!,Winter Garden,Musical,97,913023
+2008-04-27,Macbeth 08,Lyceum,Play,98,492616
+2008-04-27,Mamma Mia!,Winter Garden,Musical,100,956420
+2008-05-04,Macbeth 08,Lyceum,Play,89,516940
+2008-05-04,Mamma Mia!,Winter Garden,Musical,97,962416
+2008-05-11,Macbeth 08,Lyceum,Play,93,489874
+2008-05-11,Mamma Mia!,Winter Garden,Musical,94,908311
+2008-05-18,Macbeth 08,Lyceum,Play,98,618354
+2008-05-18,Mamma Mia!,Winter Garden,Musical,98,966801
+2008-05-25,Macbeth 08,Lyceum,Play,98,584033
+2008-05-25,Mamma Mia!,Winter Garden,Musical,98,948668
+2008-06-01,Mamma Mia!,Winter Garden,Musical,91,836018
+2008-06-08,Mamma Mia!,Winter Garden,Musical,96,882657
+2008-06-15,Mamma Mia!,Winter Garden,Musical,95,856963
+2008-06-22,Mamma Mia!,Winter Garden,Musical,100,941994
+2008-06-29,Mamma Mia!,Winter Garden,Musical,100,935402
+2008-07-06,Mamma Mia!,Winter Garden,Musical,102,909558
+2008-07-06,Title Of Show,Lyceum,Musical,54,69299
+2008-07-13,Mamma Mia!,Winter Garden,Musical,101,982823
+2008-07-13,Title Of Show,Lyceum,Musical,53,163916
+2008-07-20,Mamma Mia!,Winter Garden,Musical,102,1007600
+2008-07-20,Title Of Show,Lyceum,Musical,48,154121
+2008-07-27,Mamma Mia!,Winter Garden,Musical,102,1022164
+2008-07-27,Title Of Show,Lyceum,Musical,52,162682
+2008-08-03,Mamma Mia!,Winter Garden,Musical,102,1038790
+2008-08-03,Title Of Show,Lyceum,Musical,55,178183
+2008-08-10,Mamma Mia!,Winter Garden,Musical,101,1071486
+2008-08-10,Title Of Show,Lyceum,Musical,48,157123
+2008-08-17,Mamma Mia!,Winter Garden,Musical,102,1042471
+2008-08-17,Title Of Show,Lyceum,Musical,49,162745
+2008-08-24,Mamma Mia!,Winter Garden,Musical,101,1030679
+2008-08-24,Title Of Show,Lyceum,Musical,45,149212
+2008-08-31,Mamma Mia!,Winter Garden,Musical,102,1057007
+2008-08-31,Title Of Show,Lyceum,Musical,50,164458
+2008-09-07,Mamma Mia!,Winter Garden,Musical,96,926839
+2008-09-07,Title Of Show,Lyceum,Musical,32,106905
+2008-09-14,Mamma Mia!,Winter Garden,Musical,97,958642
+2008-09-14,Title Of Show,Lyceum,Musical,30,107591
+2008-09-21,Mamma Mia!,Winter Garden,Musical,98,986369
+2008-09-21,Title Of Show,Lyceum,Musical,36,121417
+2008-09-28,Mamma Mia!,Winter Garden,Musical,97,976467
+2008-09-28,Title Of Show,Lyceum,Musical,38,124322
+2008-10-05,Mamma Mia!,Winter Garden,Musical,99,997450
+2008-10-05,Title Of Show,Lyceum,Musical,44,148510
+2008-10-12,Mamma Mia!,Winter Garden,Musical,100,1060357
+2008-10-12,Title Of Show,Lyceum,Musical,54,217645
+2008-10-19,Mamma Mia!,Winter Garden,Musical,100,1053099
+2008-10-26,Mamma Mia!,Winter Garden,Musical,96,982407
+2008-11-02,Mamma Mia!,Winter Garden,Musical,96,955671
+2008-11-09,Mamma Mia!,Winter Garden,Musical,94,916788
+2008-11-16,Mamma Mia!,Winter Garden,Musical,91,861145
+2008-11-23,Mamma Mia!,Winter Garden,Musical,92,893907
+2008-11-30,Mamma Mia!,Winter Garden,Musical,93,1052440
+2008-12-07,Mamma Mia!,Winter Garden,Musical,95,1024773
+2008-12-14,Mamma Mia!,Winter Garden,Musical,92,937171
+2008-12-21,Mamma Mia!,Winter Garden,Musical,93,884603
+2008-12-28,Mamma Mia!,Winter Garden,Musical,101,1249381
+2009-01-04,Mamma Mia!,Winter Garden,Musical,100,1261939
+2009-01-11,Mamma Mia!,Winter Garden,Musical,94,853192
+2009-01-18,Mamma Mia!,Winter Garden,Musical,89,805395
+2009-01-25,Mamma Mia!,Winter Garden,Musical,83,682236
+2009-02-01,Mamma Mia!,Winter Garden,Musical,74,601239
+2009-02-08,Mamma Mia!,Winter Garden,Musical,89,718523
+2009-02-15,Mamma Mia!,Winter Garden,Musical,89,883212
+2009-02-22,Mamma Mia!,Winter Garden,Musical,98,895160
+2009-03-01,Mamma Mia!,Winter Garden,Musical,89,754745
+2009-03-08,Mamma Mia!,Winter Garden,Musical,86,716774
+2009-03-15,Mamma Mia!,Winter Garden,Musical,95,814152
+2009-03-15,Reasons To Be Pretty,Lyceum,Play,38,38297
+2009-03-22,Mamma Mia!,Winter Garden,Musical,98,882929
+2009-03-22,Reasons To Be Pretty,Lyceum,Play,43,106449
+2009-03-29,Mamma Mia!,Winter Garden,Musical,99,869665
+2009-03-29,Reasons To Be Pretty,Lyceum,Play,42,121629
+2009-04-05,Mamma Mia!,Winter Garden,Musical,95,848021
+2009-04-05,Reasons To Be Pretty,Lyceum,Play,42,120597
+2009-04-12,Mamma Mia!,Winter Garden,Musical,102,1021653
+2009-04-12,Reasons To Be Pretty,Lyceum,Play,55,157040
+2009-04-19,Mamma Mia!,Winter Garden,Musical,101,1005981
+2009-04-19,Reasons To Be Pretty,Lyceum,Play,48,146762
+2009-04-26,Mamma Mia!,Winter Garden,Musical,99,875597
+2009-04-26,Reasons To Be Pretty,Lyceum,Play,30,104247
+2009-05-03,Mamma Mia!,Winter Garden,Musical,99,901230
+2009-05-03,Reasons To Be Pretty,Lyceum,Play,31,107404
+2009-05-10,Mamma Mia!,Winter Garden,Musical,93,830636
+2009-05-10,Reasons To Be Pretty,Lyceum,Play,36,128164
+2009-05-17,Mamma Mia!,Winter Garden,Musical,97,869495
+2009-05-17,Reasons To Be Pretty,Lyceum,Play,38,138752
+2009-05-24,Mamma Mia!,Winter Garden,Musical,98,894070
+2009-05-24,Reasons To Be Pretty,Lyceum,Play,50,176152
+2009-05-31,Mamma Mia!,Winter Garden,Musical,90,848808
+2009-05-31,Reasons To Be Pretty,Lyceum,Play,50,168207
+2009-06-07,Mamma Mia!,Winter Garden,Musical,88,845592
+2009-06-07,Reasons To Be Pretty,Lyceum,Play,47,160865
+2009-06-14,Mamma Mia!,Winter Garden,Musical,96,962048
+2009-06-14,Reasons To Be Pretty,Lyceum,Play,74,261639
+2009-06-21,Mamma Mia!,Winter Garden,Musical,96,964786
+2009-06-28,Mamma Mia!,Winter Garden,Musical,97,988427
+2009-07-05,Mamma Mia!,Winter Garden,Musical,100,953712
+2009-07-12,Mamma Mia!,Winter Garden,Musical,95,994321
+2009-07-19,Mamma Mia!,Winter Garden,Musical,95,1017703
+2009-07-26,Mamma Mia!,Winter Garden,Musical,97,1076030
+2009-08-02,Mamma Mia!,Winter Garden,Musical,99,1079916
+2009-08-09,Mamma Mia!,Winter Garden,Musical,99,1100641
+2009-08-16,Mamma Mia!,Winter Garden,Musical,97,1085725
+2009-08-23,Mamma Mia!,Winter Garden,Musical,94,1019887
+2009-08-30,Mamma Mia!,Winter Garden,Musical,93,992079
+2009-09-06,Mamma Mia!,Winter Garden,Musical,93,967078
+2009-09-13,Mamma Mia!,Winter Garden,Musical,91,920797
+2009-09-20,Mamma Mia!,Winter Garden,Musical,94,958245
+2009-09-27,Mamma Mia!,Winter Garden,Musical,95,950422
+2009-10-04,Mamma Mia!,Winter Garden,Musical,90,914114
+2009-10-11,Mamma Mia!,Winter Garden,Musical,94,1057283
+2009-10-18,Mamma Mia!,Winter Garden,Musical,98,1049340
+2009-10-25,In The Next Room Or The Vibrator Play,Lyceum,Play,46,56201
+2009-10-25,Mamma Mia!,Winter Garden,Musical,95,980401
+2009-11-01,In The Next Room Or The Vibrator Play,Lyceum,Play,45,120650
+2009-11-01,Mamma Mia!,Winter Garden,Musical,90,922676
+2009-11-08,In The Next Room Or The Vibrator Play,Lyceum,Play,48,142206
+2009-11-08,Mamma Mia!,Winter Garden,Musical,89,965548
+2009-11-15,In The Next Room Or The Vibrator Play,Lyceum,Play,71,162622
+2009-11-15,Mamma Mia!,Winter Garden,Musical,81,811600
+2009-11-22,In The Next Room Or The Vibrator Play,Lyceum,Play,62,143731
+2009-11-22,Mamma Mia!,Winter Garden,Musical,75,743680
+2009-11-29,In The Next Room Or The Vibrator Play,Lyceum,Play,48,150727
+2009-11-29,Mamma Mia!,Winter Garden,Musical,82,972818
+2009-12-06,In The Next Room Or The Vibrator Play,Lyceum,Play,57,226704
+2009-12-06,Mamma Mia!,Winter Garden,Musical,84,950139
+2009-12-13,In The Next Room Or The Vibrator Play,Lyceum,Play,59,235481
+2009-12-13,Mamma Mia!,Winter Garden,Musical,84,902406
+2009-12-20,In The Next Room Or The Vibrator Play,Lyceum,Play,48,175078
+2009-12-20,Mamma Mia!,Winter Garden,Musical,76,765079
+2009-12-27,In The Next Room Or The Vibrator Play,Lyceum,Play,51,167550
+2009-12-27,Mamma Mia!,Winter Garden,Musical,96,1137628
+2010-01-03,In The Next Room Or The Vibrator Play,Lyceum,Play,67,253434
+2010-01-03,Mamma Mia!,Winter Garden,Musical,94,1315354
+2010-01-10,In The Next Room Or The Vibrator Play,Lyceum,Play,79,295615
+2010-01-10,Mamma Mia!,Winter Garden,Musical,84,814674
+2010-01-17,Mamma Mia!,Winter Garden,Musical,78,746046
+2010-01-24,Mamma Mia!,Winter Garden,Musical,65,591889
+2010-01-31,Mamma Mia!,Winter Garden,Musical,67,573759
+2010-02-07,Mamma Mia!,Winter Garden,Musical,66,553179
+2010-02-14,Mamma Mia!,Winter Garden,Musical,80,771095
+2010-02-21,Looped,Lyceum,Play,60,94462
+2010-02-21,Mamma Mia!,Winter Garden,Musical,91,855846
+2010-02-28,Looped,Lyceum,Play,48,139174
+2010-02-28,Mamma Mia!,Winter Garden,Musical,72,600043
+2010-03-07,Looped,Lyceum,Play,65,167023
+2010-03-07,Mamma Mia!,Winter Garden,Musical,79,661456
+2010-03-14,Looped,Lyceum,Play,64,151549
+2010-03-14,Mamma Mia!,Winter Garden,Musical,87,718613
+2010-03-21,Looped,Lyceum,Play,54,180830
+2010-03-21,Mamma Mia!,Winter Garden,Musical,93,830279
+2010-03-28,Looped,Lyceum,Play,55,176622
+2010-03-28,Mamma Mia!,Winter Garden,Musical,96,865702
+2010-04-04,Looped,Lyceum,Play,51,168351
+2010-04-04,Mamma Mia!,Winter Garden,Musical,99,1066795
+2010-04-11,Looped,Lyceum,Play,59,184514
+2010-04-11,Mamma Mia!,Winter Garden,Musical,96,973906
+2010-04-18,Mamma Mia!,Winter Garden,Musical,92,853873
+2010-04-25,Mamma Mia!,Winter Garden,Musical,89,827589
+2010-05-02,Mamma Mia!,Winter Garden,Musical,84,775311
+2010-05-09,Mamma Mia!,Winter Garden,Musical,83,780950
+2010-05-16,Mamma Mia!,Winter Garden,Musical,86,836492
+2010-05-23,Mamma Mia!,Winter Garden,Musical,92,913498
+2010-05-30,Mamma Mia!,Winter Garden,Musical,85,829089
+2010-06-06,Mamma Mia!,Winter Garden,Musical,79,755992
+2010-06-13,Mamma Mia!,Winter Garden,Musical,84,798510
+2010-06-20,Mamma Mia!,Winter Garden,Musical,80,772589
+2010-06-27,Mamma Mia!,Winter Garden,Musical,84,844768
+2010-07-04,Mamma Mia!,Winter Garden,Musical,83,813658
+2010-07-11,Mamma Mia!,Winter Garden,Musical,86,851495
+2010-07-18,Mamma Mia!,Winter Garden,Musical,89,915829
+2010-07-25,Mamma Mia!,Winter Garden,Musical,93,967944
+2010-08-01,Mamma Mia!,Winter Garden,Musical,93,963375
+2010-08-08,Mamma Mia!,Winter Garden,Musical,92,978701
+2010-08-15,Mamma Mia!,Winter Garden,Musical,87,923650
+2010-08-22,Mamma Mia!,Winter Garden,Musical,85,886815
+2010-08-29,Mamma Mia!,Winter Garden,Musical,79,830277
+2010-09-05,Mamma Mia!,Winter Garden,Musical,78,818526
+2010-09-12,Mamma Mia!,Winter Garden,Musical,86,775403
+2010-09-19,Mamma Mia!,Winter Garden,Musical,86,798971
+2010-09-26,Mamma Mia!,Winter Garden,Musical,88,821598
+2010-10-03,Mamma Mia!,Winter Garden,Musical,91,840632
+2010-10-10,Mamma Mia!,Winter Garden,Musical,92,949532
+2010-10-10,The Scottsboro Boys,Lyceum,Musical,65,174965
+2010-10-17,Mamma Mia!,Winter Garden,Musical,98,988857
+2010-10-17,The Scottsboro Boys,Lyceum,Musical,69,232538
+2010-10-24,Mamma Mia!,Winter Garden,Musical,88,889970
+2010-10-24,The Scottsboro Boys,Lyceum,Musical,72,266889
+2010-10-31,Mamma Mia!,Winter Garden,Musical,76,784309
+2010-10-31,The Scottsboro Boys,Lyceum,Musical,81,220818
+2010-11-07,Mamma Mia!,Winter Garden,Musical,79,794941
+2010-11-07,The Scottsboro Boys,Lyceum,Musical,73,256575
+2010-11-14,Mamma Mia!,Winter Garden,Musical,82,836660
+2010-11-14,The Scottsboro Boys,Lyceum,Musical,77,305606
+2010-11-21,Mamma Mia!,Winter Garden,Musical,70,706711
+2010-11-21,The Scottsboro Boys,Lyceum,Musical,68,283054
+2010-11-28,Mamma Mia!,Winter Garden,Musical,77,838078
+2010-11-28,The Scottsboro Boys,Lyceum,Musical,60,273250
+2010-12-05,Mamma Mia!,Winter Garden,Musical,74,777759
+2010-12-05,The Scottsboro Boys,Lyceum,Musical,78,282465
+2010-12-12,Mamma Mia!,Winter Garden,Musical,79,817276
+2010-12-12,The Scottsboro Boys,Lyceum,Musical,97,454251
+2010-12-19,Mamma Mia!,Winter Garden,Musical,68,713888
+2010-12-26,Mamma Mia!,Winter Garden,Musical,88,866804
+2011-01-02,Mamma Mia!,Winter Garden,Musical,93,1353837
+2011-01-09,Mamma Mia!,Winter Garden,Musical,79,802972
+2011-01-16,Mamma Mia!,Winter Garden,Musical,74,695507
+2011-01-23,Mamma Mia!,Winter Garden,Musical,57,527026
+2011-01-30,Mamma Mia!,Winter Garden,Musical,61,508770
+2011-02-06,Mamma Mia!,Winter Garden,Musical,64,541521
+2011-02-13,Mamma Mia!,Winter Garden,Musical,64,580278
+2011-02-20,Mamma Mia!,Winter Garden,Musical,81,764201
+2011-02-27,Ghetto Klown,Lyceum,Play,88,384100
+2011-02-27,Mamma Mia!,Winter Garden,Musical,86,800980
+2011-03-06,Ghetto Klown,Lyceum,Play,88,328933
+2011-03-06,Mamma Mia!,Winter Garden,Musical,66,580815
+2011-03-13,Ghetto Klown,Lyceum,Play,82,322961
+2011-03-13,Mamma Mia!,Winter Garden,Musical,77,703222
+2011-03-20,Ghetto Klown,Lyceum,Play,79,312078
+2011-03-20,Mamma Mia!,Winter Garden,Musical,86,845480
+2011-03-27,Ghetto Klown,Lyceum,Play,87,322533
+2011-03-27,Mamma Mia!,Winter Garden,Musical,76,709895
+2011-04-03,Ghetto Klown,Lyceum,Play,77,348447
+2011-04-03,Mamma Mia!,Winter Garden,Musical,75,710008
+2011-04-10,Ghetto Klown,Lyceum,Play,73,336676
+2011-04-10,Mamma Mia!,Winter Garden,Musical,80,745627
+2011-04-17,Ghetto Klown,Lyceum,Play,71,327469
+2011-04-17,Mamma Mia!,Winter Garden,Musical,85,818975
+2011-04-24,Ghetto Klown,Lyceum,Play,82,362376
+2011-04-24,Mamma Mia!,Winter Garden,Musical,102,1167769
+2011-05-01,Ghetto Klown,Lyceum,Play,76,317798
+2011-05-01,Mamma Mia!,Winter Garden,Musical,91,943467
+2011-05-08,Ghetto Klown,Lyceum,Play,72,308002
+2011-05-08,Mamma Mia!,Winter Garden,Musical,85,865824
+2011-05-15,Ghetto Klown,Lyceum,Play,69,311450
+2011-05-15,Mamma Mia!,Winter Garden,Musical,79,775420
+2011-05-22,Ghetto Klown,Lyceum,Play,72,291473
+2011-05-22,Mamma Mia!,Winter Garden,Musical,86,859579
+2011-05-29,Ghetto Klown,Lyceum,Play,69,253846
+2011-05-29,Mamma Mia!,Winter Garden,Musical,83,813461
+2011-06-05,Ghetto Klown,Lyceum,Play,66,274380
+2011-06-05,Mamma Mia!,Winter Garden,Musical,80,786844
+2011-06-12,Ghetto Klown,Lyceum,Play,65,182653
+2011-06-12,Mamma Mia!,Winter Garden,Musical,81,785948
+2011-06-19,Ghetto Klown,Lyceum,Play,70,261623
+2011-06-19,Mamma Mia!,Winter Garden,Musical,79,774101
+2011-06-26,Ghetto Klown,Lyceum,Play,71,252835
+2011-06-26,Mamma Mia!,Winter Garden,Musical,89,892334
+2011-07-03,Ghetto Klown,Lyceum,Play,82,289574
+2011-07-03,Mamma Mia!,Winter Garden,Musical,79,792888
+2011-07-10,Ghetto Klown,Lyceum,Play,92,390333
+2011-07-10,Mamma Mia!,Winter Garden,Musical,80,787741
+2011-07-17,Mamma Mia!,Winter Garden,Musical,81,807798
+2011-07-24,Mamma Mia!,Winter Garden,Musical,88,897983
+2011-07-31,Mamma Mia!,Winter Garden,Musical,89,917532
+2011-08-07,Mamma Mia!,Winter Garden,Musical,84,860053
+2011-08-14,Mamma Mia!,Winter Garden,Musical,86,878148
+2011-08-21,Mamma Mia!,Winter Garden,Musical,81,801197
+2011-08-28,Mamma Mia!,Winter Garden,Musical,79,588493
+2011-09-04,Mamma Mia!,Winter Garden,Musical,71,709417
+2011-09-11,Mamma Mia!,Winter Garden,Musical,65,585783
+2011-09-18,Mamma Mia!,Winter Garden,Musical,72,676262
+2011-09-25,Mamma Mia!,Winter Garden,Musical,88,825127
+2011-10-02,Mamma Mia!,Winter Garden,Musical,85,819826
+2011-10-09,Mamma Mia!,Winter Garden,Musical,81,831999
+2011-10-16,Mamma Mia!,Winter Garden,Musical,83,847844
+2011-10-23,Mamma Mia!,Winter Garden,Musical,83,835972
+2011-10-30,Mamma Mia!,Winter Garden,Musical,83,848721
+2011-11-06,Mamma Mia!,Winter Garden,Musical,66,666325
+2011-11-13,Mamma Mia!,Winter Garden,Musical,74,745600
+2011-11-20,Mamma Mia!,Winter Garden,Musical,61,604742
+2011-11-27,Mamma Mia!,Winter Garden,Musical,76,817860
+2011-12-04,Mamma Mia!,Winter Garden,Musical,66,670115
+2011-12-11,Mamma Mia!,Winter Garden,Musical,70,717738
+2011-12-18,Mamma Mia!,Winter Garden,Musical,56,560395
+2011-12-25,Mamma Mia!,Winter Garden,Musical,67,704380
+2012-01-01,Mamma Mia!,Winter Garden,Musical,96,1240753
+2012-01-08,Mamma Mia!,Winter Garden,Musical,74,759484
+2012-01-15,Mamma Mia!,Winter Garden,Musical,78,686636
+2012-01-22,Mamma Mia!,Winter Garden,Musical,68,574950
+2012-01-29,Mamma Mia!,Winter Garden,Musical,67,566619
+2012-02-05,Mamma Mia!,Winter Garden,Musical,67,551069
+2012-02-12,Mamma Mia!,Winter Garden,Musical,63,542159
+2012-02-12,Venus In Fur,Lyceum,Play,79,346117
+2012-02-19,Mamma Mia!,Winter Garden,Musical,82,788253
+2012-02-19,Venus In Fur,Lyceum,Play,89,402294
+2012-02-26,Mamma Mia!,Winter Garden,Musical,85,825341
+2012-02-26,Venus In Fur,Lyceum,Play,82,369176
+2012-03-04,Mamma Mia!,Winter Garden,Musical,73,643246
+2012-03-04,Venus In Fur,Lyceum,Play,66,306609
+2012-03-11,Mamma Mia!,Winter Garden,Musical,65,586403
+2012-03-11,Venus In Fur,Lyceum,Play,70,344313
+2012-03-18,Mamma Mia!,Winter Garden,Musical,73,685129
+2012-03-18,Venus In Fur,Lyceum,Play,64,263685
+2012-03-25,Mamma Mia!,Winter Garden,Musical,70,659751
+2012-03-25,Venus In Fur,Lyceum,Play,70,325402
+2012-04-01,Mamma Mia!,Winter Garden,Musical,78,744229
+2012-04-01,Venus In Fur,Lyceum,Play,67,316010
+2012-04-08,Mamma Mia!,Winter Garden,Musical,90,947575
+2012-04-08,Venus In Fur,Lyceum,Play,50,225267
+2012-04-15,Mamma Mia!,Winter Garden,Musical,96,1005002
+2012-04-15,Venus In Fur,Lyceum,Play,49,280779
+2012-04-22,Mamma Mia!,Winter Garden,Musical,75,734105
+2012-04-22,Venus In Fur,Lyceum,Play,48,271054
+2012-04-29,Mamma Mia!,Winter Garden,Musical,81,804623
+2012-04-29,Venus In Fur,Lyceum,Play,58,303913
+2012-05-06,Mamma Mia!,Winter Garden,Musical,77,802435
+2012-05-06,Venus In Fur,Lyceum,Play,54,282862
+2012-05-13,Mamma Mia!,Winter Garden,Musical,70,662496
+2012-05-13,Venus In Fur,Lyceum,Play,53,293894
+2012-05-20,Mamma Mia!,Winter Garden,Musical,82,808686
+2012-05-20,Venus In Fur,Lyceum,Play,58,316005
+2012-05-27,Mamma Mia!,Winter Garden,Musical,76,737690
+2012-05-27,Venus In Fur,Lyceum,Play,63,324106
+2012-06-03,Mamma Mia!,Winter Garden,Musical,70,670373
+2012-06-03,Venus In Fur,Lyceum,Play,53,305997
+2012-06-10,Mamma Mia!,Winter Garden,Musical,75,720055
+2012-06-10,Venus In Fur,Lyceum,Play,71,422215
+2012-06-17,Mamma Mia!,Winter Garden,Musical,73,687045
+2012-06-17,Venus In Fur,Lyceum,Play,83,635622
+2012-06-24,Mamma Mia!,Winter Garden,Musical,71,682931
+2012-07-01,Mamma Mia!,Winter Garden,Musical,79,750421
+2012-07-08,Mamma Mia!,Winter Garden,Musical,84,847933
+2012-07-15,Mamma Mia!,Winter Garden,Musical,87,863782
+2012-07-22,Mamma Mia!,Winter Garden,Musical,86,874943
+2012-07-29,Mamma Mia!,Winter Garden,Musical,88,898564
+2012-08-05,Mamma Mia!,Winter Garden,Musical,84,862888
+2012-08-12,Mamma Mia!,Winter Garden,Musical,83,872590
+2012-08-19,Mamma Mia!,Winter Garden,Musical,81,846506
+2012-08-26,Mamma Mia!,Winter Garden,Musical,76,784701
+2012-09-02,Mamma Mia!,Winter Garden,Musical,72,743291
+2012-09-09,Mamma Mia!,Winter Garden,Musical,78,741090
+2012-09-16,Mamma Mia!,Winter Garden,Musical,87,820085
+2012-09-23,Mamma Mia!,Winter Garden,Musical,75,729744
+2012-09-30,Mamma Mia!,Winter Garden,Musical,82,813955
+2012-10-07,Mamma Mia!,Winter Garden,Musical,93,961683
+2012-10-14,Mamma Mia!,Winter Garden,Musical,83,869580
+2012-10-21,Mamma Mia!,Winter Garden,Musical,81,854181
+2012-10-28,Mamma Mia!,Winter Garden,Musical,73,667027
+2012-11-04,Mamma Mia!,Winter Garden,Musical,69,541421
+2012-11-11,Mamma Mia!,Winter Garden,Musical,63,612816
+2012-11-18,Mamma Mia!,Winter Garden,Musical,62,584024
+2012-11-25,Mamma Mia!,Winter Garden,Musical,82,862275
+2012-12-02,Mamma Mia!,Winter Garden,Musical,61,623646
+2012-12-09,Mamma Mia!,Winter Garden,Musical,66,668042
+2012-12-16,Mamma Mia!,Winter Garden,Musical,58,594417
+2012-12-23,Mamma Mia!,Winter Garden,Musical,73,761891
+2012-12-30,Mamma Mia!,Winter Garden,Musical,93,1439211
+2013-01-06,Mamma Mia!,Winter Garden,Musical,88,869907
+2013-01-13,Mamma Mia!,Winter Garden,Musical,69,601136
+2013-01-20,Mamma Mia!,Winter Garden,Musical,72,633996
+2013-01-27,Mamma Mia!,Winter Garden,Musical,70,592095
+2013-02-03,Mamma Mia!,Winter Garden,Musical,68,575932
+2013-02-10,Mamma Mia!,Winter Garden,Musical,57,478909
+2013-02-17,Mamma Mia!,Winter Garden,Musical,89,845181
+2013-02-24,Mamma Mia!,Winter Garden,Musical,73,680908
+2013-03-03,Mamma Mia!,Winter Garden,Musical,73,657925
+2013-03-10,Mamma Mia!,Winter Garden,Musical,74,696102
+2013-03-17,Mamma Mia!,Winter Garden,Musical,79,749447
+2013-03-24,Mamma Mia!,Winter Garden,Musical,86,842657
+2013-03-24,The Nance,Lyceum,Play,76,199627
+2013-03-31,Mamma Mia!,Winter Garden,Musical,102,1150663
+2013-03-31,The Nance,Lyceum,Play,79,392189
+2013-04-07,Mamma Mia!,Winter Garden,Musical,94,1027152
+2013-04-07,The Nance,Lyceum,Play,80,367937
+2013-04-14,Mamma Mia!,Winter Garden,Musical,75,750520
+2013-04-14,The Nance,Lyceum,Play,88,323250
+2013-04-21,Mamma Mia!,Winter Garden,Musical,83,833047
+2013-04-21,The Nance,Lyceum,Play,80,362059
+2013-04-28,Mamma Mia!,Winter Garden,Musical,87,877550
+2013-04-28,The Nance,Lyceum,Play,76,445409
+2013-05-05,Mamma Mia!,Winter Garden,Musical,90,954814
+2013-05-05,The Nance,Lyceum,Play,73,443964
+2013-05-12,Mamma Mia!,Winter Garden,Musical,83,880486
+2013-05-12,The Nance,Lyceum,Play,75,470195
+2013-05-19,Mamma Mia!,Winter Garden,Musical,79,822902
+2013-05-19,The Nance,Lyceum,Play,81,499762
+2013-05-26,Mamma Mia!,Winter Garden,Musical,87,941265
+2013-05-26,The Nance,Lyceum,Play,85,516625
+2013-06-02,Mamma Mia!,Winter Garden,Musical,78,812857
+2013-06-02,The Nance,Lyceum,Play,76,439070
+2013-06-09,Mamma Mia!,Winter Garden,Musical,70,718464
+2013-06-09,The Nance,Lyceum,Play,80,501724
+2013-06-16,Mamma Mia!,Winter Garden,Musical,78,816487
+2013-06-16,The Nance,Lyceum,Play,82,520067
+2013-06-23,Mamma Mia!,Winter Garden,Musical,83,887248
+2013-06-23,The Nance,Lyceum,Play,66,437989
+2013-06-30,Mamma Mia!,Winter Garden,Musical,88,932345
+2013-06-30,The Nance,Lyceum,Play,61,390725
+2013-07-07,Mamma Mia!,Winter Garden,Musical,88,954657
+2013-07-07,The Nance,Lyceum,Play,71,360241
+2013-07-14,Mamma Mia!,Winter Garden,Musical,90,930816
+2013-07-14,The Nance,Lyceum,Play,57,350925
+2013-07-21,Mamma Mia!,Winter Garden,Musical,88,951216
+2013-07-21,The Nance,Lyceum,Play,69,380778
+2013-07-28,Mamma Mia!,Winter Garden,Musical,91,965481
+2013-07-28,The Nance,Lyceum,Play,68,363658
+2013-08-04,Mamma Mia!,Winter Garden,Musical,90,937040
+2013-08-04,The Nance,Lyceum,Play,67,352327
+2013-08-11,Mamma Mia!,Winter Garden,Musical,93,1002632
+2013-08-11,The Nance,Lyceum,Play,81,444605
+2013-08-18,Mamma Mia!,Winter Garden,Musical,88,953280
+2013-08-25,Mamma Mia!,Winter Garden,Musical,79,831600
+2013-09-01,Mamma Mia!,Winter Garden,Musical,75,773583
+2013-09-08,Mamma Mia!,Winter Garden,Musical,74,726845
+2013-09-15,Mamma Mia!,Winter Garden,Musical,74,716290
+2013-09-22,A Night With Janis Joplin,Lyceum,Musical,91,144461
+2013-09-22,Mamma Mia!,Winter Garden,Musical,76,775756
+2013-09-29,A Night With Janis Joplin,Lyceum,Musical,81,271564
+2013-09-29,Mamma Mia!,Winter Garden,Musical,72,725606
+2013-10-06,A Night With Janis Joplin,Lyceum,Musical,84,281871
+2013-10-06,Mamma Mia!,Winter Garden,Musical,75,768298
+2013-10-13,A Night With Janis Joplin,Lyceum,Musical,93,353070
+2013-10-13,Mamma Mia!,Winter Garden,Musical,84,900507
+2013-10-20,A Night With Janis Joplin,Lyceum,Musical,92,397767
+2013-10-20,Mamma Mia!,Winter Garden,Musical,84,894941
+2013-10-27,A Night With Janis Joplin,Lyceum,Musical,84,433141
+2013-11-03,A Night With Janis Joplin,Lyceum,Musical,77,388662
+2013-11-10,A Night With Janis Joplin,Lyceum,Musical,84,438961
+2013-11-17,A Night With Janis Joplin,Lyceum,Musical,84,415279
+2013-11-24,A Night With Janis Joplin,Lyceum,Musical,65,359718
+2013-12-01,A Night With Janis Joplin,Lyceum,Musical,55,317171
+2013-12-08,A Night With Janis Joplin,Lyceum,Musical,73,393840
+2013-12-15,A Night With Janis Joplin,Lyceum,Musical,69,373869
+2013-12-22,A Night With Janis Joplin,Lyceum,Musical,58,291763
+2013-12-29,A Night With Janis Joplin,Lyceum,Musical,74,444357
+2014-01-05,A Night With Janis Joplin,Lyceum,Musical,62,369944
+2014-01-12,A Night With Janis Joplin,Lyceum,Musical,61,331705
+2014-01-19,A Night With Janis Joplin,Lyceum,Musical,69,339451
+2014-01-26,A Night With Janis Joplin,Lyceum,Musical,63,314542
+2014-02-02,A Night With Janis Joplin,Lyceum,Musical,48,231225
+2014-02-09,A Night With Janis Joplin,Lyceum,Musical,74,342185
+2014-02-16,Rocky,Winter Garden,Musical,85,373672
+2014-02-23,Rocky,Winter Garden,Musical,88,642830
+2014-03-02,Rocky,Winter Garden,Musical,74,551300
+2014-03-09,Rocky,Winter Garden,Musical,78,635153
+2014-03-16,Rocky,Winter Garden,Musical,83,639757
+2014-03-16,The Realistic Joneses,Lyceum,Play,81,253222
+2014-03-23,Rocky,Winter Garden,Musical,80,799879
+2014-03-23,The Realistic Joneses,Lyceum,Play,81,433391
+2014-03-30,Rocky,Winter Garden,Musical,76,828848
+2014-03-30,The Realistic Joneses,Lyceum,Play,80,462236
+2014-04-06,Rocky,Winter Garden,Musical,70,753365
+2014-04-06,The Realistic Joneses,Lyceum,Play,87,410334
+2014-04-13,Rocky,Winter Garden,Musical,72,754394
+2014-04-13,The Realistic Joneses,Lyceum,Play,85,518159
+2014-04-20,Rocky,Winter Garden,Musical,88,1022747
+2014-04-20,The Realistic Joneses,Lyceum,Play,94,613441
+2014-04-27,Rocky,Winter Garden,Musical,73,783892
+2014-04-27,The Realistic Joneses,Lyceum,Play,93,619507
+2014-05-04,Rocky,Winter Garden,Musical,66,707891
+2014-05-04,The Realistic Joneses,Lyceum,Play,90,605288
+2014-05-11,Rocky,Winter Garden,Musical,73,741927
+2014-05-11,The Realistic Joneses,Lyceum,Play,87,569042
+2014-05-18,Rocky,Winter Garden,Musical,75,742525
+2014-05-18,The Realistic Joneses,Lyceum,Play,91,590378
+2014-05-25,Rocky,Winter Garden,Musical,73,719407
+2014-05-25,The Realistic Joneses,Lyceum,Play,91,574791
+2014-06-01,Rocky,Winter Garden,Musical,63,652931
+2014-06-01,The Realistic Joneses,Lyceum,Play,77,432608
+2014-06-08,Rocky,Winter Garden,Musical,61,617990
+2014-06-08,The Realistic Joneses,Lyceum,Play,70,417565
+2014-06-15,Rocky,Winter Garden,Musical,71,761451
+2014-06-15,The Realistic Joneses,Lyceum,Play,72,442302
+2014-06-22,Rocky,Winter Garden,Musical,68,719363
+2014-06-22,The Realistic Joneses,Lyceum,Play,75,419041
+2014-06-29,Rocky,Winter Garden,Musical,68,711332
+2014-06-29,The Realistic Joneses,Lyceum,Play,72,428156
+2014-07-06,Rocky,Winter Garden,Musical,74,625635
+2014-07-06,The Realistic Joneses,Lyceum,Play,83,420300
+2014-07-13,Rocky,Winter Garden,Musical,63,626984
+2014-07-20,Rocky,Winter Garden,Musical,69,674063
+2014-07-27,Rocky,Winter Garden,Musical,77,701805
+2014-08-03,Rocky,Winter Garden,Musical,84,767519
+2014-08-10,Rocky,Winter Garden,Musical,85,795275
+2014-08-17,Rocky,Winter Garden,Musical,85,870165
+2014-09-28,Disgraced,Lyceum,Play,86,100824
+2014-10-05,Disgraced,Lyceum,Play,73,292989
+2014-10-12,Disgraced,Lyceum,Play,80,319485
+2014-10-19,Disgraced,Lyceum,Play,82,352737
+2014-10-26,Disgraced,Lyceum,Play,82,362147
+2014-11-02,Disgraced,Lyceum,Play,75,408008
+2014-11-09,Disgraced,Lyceum,Play,89,512646
+2014-11-16,Disgraced,Lyceum,Play,76,471373
+2014-11-23,Disgraced,Lyceum,Play,71,433598
+2014-11-30,Disgraced,Lyceum,Play,68,412694
+2014-12-07,Disgraced,Lyceum,Play,66,410321
+2014-12-14,Disgraced,Lyceum,Play,66,415019
+2014-12-21,Disgraced,Lyceum,Play,53,332589
+2014-12-28,Disgraced,Lyceum,Play,65,393371
+2015-01-04,Disgraced,Lyceum,Play,78,386752
+2015-01-11,Disgraced,Lyceum,Play,70,382854
+2015-01-18,Disgraced,Lyceum,Play,71,404998
+2015-01-25,Disgraced,Lyceum,Play,67,360932
+2015-02-01,Disgraced,Lyceum,Play,67,348413
+2015-02-08,Disgraced,Lyceum,Play,63,333741
+2015-02-15,Disgraced,Lyceum,Play,63,351175
+2015-02-22,Disgraced,Lyceum,Play,62,333065
+2015-03-01,Disgraced,Lyceum,Play,72,415237
+2015-03-22,Wolf Hall Parts One & Two,Winter Garden,Play,76,419780
+2015-03-29,The Visit 2015,Lyceum,Musical,80,167410
+2015-03-29,Wolf Hall Parts One & Two,Winter Garden,Play,80,886920
+2015-04-05,The Visit 2015,Lyceum,Musical,72,214803
+2015-04-05,Wolf Hall Parts One & Two,Winter Garden,Play,73,689541
+2015-04-12,The Visit 2015,Lyceum,Musical,72,224289
+2015-04-12,Wolf Hall Parts One & Two,Winter Garden,Play,77,594758
+2015-04-19,The Visit 2015,Lyceum,Musical,71,212750
+2015-04-19,Wolf Hall Parts One & Two,Winter Garden,Play,69,860730
+2015-04-26,The Visit 2015,Lyceum,Musical,73,180105
+2015-04-26,Wolf Hall Parts One & Two,Winter Garden,Play,60,734292
+2015-05-03,The Visit 2015,Lyceum,Musical,60,194145
+2015-05-03,Wolf Hall Parts One & Two,Winter Garden,Play,62,724737
+2015-05-10,The Visit 2015,Lyceum,Musical,55,208078
+2015-05-10,Wolf Hall Parts One & Two,Winter Garden,Play,53,630653
+2015-05-17,The Visit 2015,Lyceum,Musical,55,211430
+2015-05-17,Wolf Hall Parts One & Two,Winter Garden,Play,61,734344
+2015-05-24,The Visit 2015,Lyceum,Musical,67,201623
+2015-05-24,Wolf Hall Parts One & Two,Winter Garden,Play,58,600295
+2015-05-31,The Visit 2015,Lyceum,Musical,49,149023
+2015-05-31,Wolf Hall Parts One & Two,Winter Garden,Play,49,548136
+2015-06-07,The Visit 2015,Lyceum,Musical,58,194400
+2015-06-07,Wolf Hall Parts One & Two,Winter Garden,Play,57,634917
+2015-06-14,The Visit 2015,Lyceum,Musical,64,274465
+2015-06-14,Wolf Hall Parts One & Two,Winter Garden,Play,54,581972
+2015-06-21,Wolf Hall Parts One & Two,Winter Garden,Play,44,467890
+2015-06-28,Wolf Hall Parts One & Two,Winter Garden,Play,50,515472
+2015-07-05,Wolf Hall Parts One & Two,Winter Garden,Play,59,346459
+2015-10-25,A View From The Bridge 2015,Lyceum,Play,80,274654
+2015-11-01,A View From The Bridge 2015,Lyceum,Play,77,403408
+2015-11-08,A View From The Bridge 2015,Lyceum,Play,84,406719
+2015-11-15,A View From The Bridge 2015,Lyceum,Play,87,440691
+2015-11-15,School Of Rock,Winter Garden,Musical,90,928596
+2015-11-22,A View From The Bridge 2015,Lyceum,Play,81,525280
+2015-11-22,School Of Rock,Winter Garden,Musical,82,736712
+2015-11-29,A View From The Bridge 2015,Lyceum,Play,74,523447
+2015-11-29,School Of Rock,Winter Garden,Musical,98,1304251
+2015-12-06,A View From The Bridge 2015,Lyceum,Play,78,533251
+2015-12-06,School Of Rock,Winter Garden,Musical,88,669028
+2015-12-13,A View From The Bridge 2015,Lyceum,Play,77,541565
+2015-12-13,School Of Rock,Winter Garden,Musical,91,956818
+2015-12-20,A View From The Bridge 2015,Lyceum,Play,70,485715
+2015-12-20,School Of Rock,Winter Garden,Musical,85,1023108
+2015-12-27,A View From The Bridge 2015,Lyceum,Play,73,477087
+2015-12-27,School Of Rock,Winter Garden,Musical,102,1506236
+2016-01-03,A View From The Bridge 2015,Lyceum,Play,87,518228
+2016-01-03,School Of Rock,Winter Garden,Musical,102,1671622
+2016-01-10,A View From The Bridge 2015,Lyceum,Play,84,529395
+2016-01-10,School Of Rock,Winter Garden,Musical,84,981822
+2016-01-17,A View From The Bridge 2015,Lyceum,Play,85,525768
+2016-01-17,School Of Rock,Winter Garden,Musical,87,1073910
+2016-01-24,A View From The Bridge 2015,Lyceum,Play,77,325572
+2016-01-24,School Of Rock,Winter Garden,Musical,76,526274
+2016-01-31,A View From The Bridge 2015,Lyceum,Play,81,477846
+2016-01-31,School Of Rock,Winter Garden,Musical,77,817940
+2016-02-07,A View From The Bridge 2015,Lyceum,Play,75,436995
+2016-02-07,School Of Rock,Winter Garden,Musical,76,756571
+2016-02-14,A View From The Bridge 2015,Lyceum,Play,80,462978
+2016-02-14,School Of Rock,Winter Garden,Musical,87,999098
+2016-02-21,A View From The Bridge 2015,Lyceum,Play,91,538668
+2016-02-21,School Of Rock,Winter Garden,Musical,101,1152012
+2016-02-28,School Of Rock,Winter Garden,Musical,80,720585
+2016-03-06,School Of Rock,Winter Garden,Musical,73,729218
+2016-03-13,School Of Rock,Winter Garden,Musical,88,900072
+2016-03-20,School Of Rock,Winter Garden,Musical,93,1072497
+2016-03-27,School Of Rock,Winter Garden,Musical,101,1323673
+2016-04-03,Fully Committed,Lyceum,Play,77,210547
+2016-04-03,School Of Rock,Winter Garden,Musical,100,1336781
+2016-04-10,Fully Committed,Lyceum,Play,73,386498
+2016-04-10,School Of Rock,Winter Garden,Musical,85,993584
+2016-04-17,Fully Committed,Lyceum,Play,70,387494
+2016-04-17,School Of Rock,Winter Garden,Musical,85,1022302
+2016-04-24,Fully Committed,Lyceum,Play,81,364746
+2016-04-24,School Of Rock,Winter Garden,Musical,86,991893
+2016-05-01,Fully Committed,Lyceum,Play,77,377270
+2016-05-01,School Of Rock,Winter Garden,Musical,88,1003657
+2016-05-08,Fully Committed,Lyceum,Play,68,385642
+2016-05-08,School Of Rock,Winter Garden,Musical,79,816811
+2016-05-15,Fully Committed,Lyceum,Play,72,419040
+2016-05-15,School Of Rock,Winter Garden,Musical,76,847399
+2016-05-22,Fully Committed,Lyceum,Play,73,426562
+2016-05-22,School Of Rock,Winter Garden,Musical,88,930524
+2016-05-29,Fully Committed,Lyceum,Play,66,371654
+2016-05-29,School Of Rock,Winter Garden,Musical,94,1082056
+2016-06-05,Fully Committed,Lyceum,Play,62,343091
+2016-06-05,School Of Rock,Winter Garden,Musical,90,1024700
+2016-06-12,Fully Committed,Lyceum,Play,69,370369
+2016-06-12,School Of Rock,Winter Garden,Musical,94,1082064
+2016-06-19,Fully Committed,Lyceum,Play,70,417308
+2016-06-19,School Of Rock,Winter Garden,Musical,94,1170683
+2016-06-26,Fully Committed,Lyceum,Play,74,426533
+2016-06-26,School Of Rock,Winter Garden,Musical,98,1250456
+2016-07-03,Fully Committed,Lyceum,Play,79,430791
+2016-07-03,School Of Rock,Winter Garden,Musical,95,1194312
+2016-07-10,Fully Committed,Lyceum,Play,68,395188
+2016-07-10,School Of Rock,Winter Garden,Musical,95,1157594
+2016-07-17,Fully Committed,Lyceum,Play,72,415767
+2016-07-17,School Of Rock,Winter Garden,Musical,96,1165912
+2016-07-24,Fully Committed,Lyceum,Play,79,471574
+2016-07-24,School Of Rock,Winter Garden,Musical,97,1207375
+2016-07-31,Fully Committed,Lyceum,Play,85,468583
+2016-07-31,School Of Rock,Winter Garden,Musical,98,1226997
+2016-08-07,School Of Rock,Winter Garden,Musical,96,1211127
+2016-08-14,School Of Rock,Winter Garden,Musical,95,1160694

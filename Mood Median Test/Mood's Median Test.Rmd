@@ -1,0 +1,145 @@
+---
+title: "Mood's Median Test"
+author: "Jong Hee Lee, Antonio Bosca, Kevin Mouck"
+date: "2022-12-15"
+output:
+  pdf_document: default
+  word_document: default
+urlcolor: blue
+header-includes:
+- \usepackage{subfig}
+- \usepackage{amsmath}
+geometry: left=1in,right=1in,top=1in,bottom=1in
+---
+
+# Abstract
+
+This report examines the uses, pitfalls, and overall effectiveness of the Mood’s Median Test as a way to compare medians. Medians are often deemed less important in the context of statistical analysis since there’s usually less information that can be gleaned from a median than from a mean when attempting to extrapolate sample data with an unknown distribution to its larger population distribution. However, in certain real-world situations, medians across populations can offer useful insight into trends and peculiarities not seen by means, variances, and other, more popular statistics.
+The Mood’s Median Test is a nonparametric method that uses a contingency table and a chi-square test statistic to determine whether medians across two or more populations can be reasonably said to be equal based on given samples. This report demonstrates how the test is carried out (whether by hand or by R code) and argues how the test is useful among smaller samples even when those samples have different variances. The report also argues for the test’s effectiveness of finding symmetrical distributions instead of simply assuming a symmetrical population probability distribution (normal, uniform, Cauchy, etc.). This method of determining the equality of medians serves as an alternative to a one-way ANOVA test and provides a fast, consistent resource for usefully comparing populations of different sizes.
+
+# Background
+
+Alexander Mood was a statistician who graduated from Princeton University and then began new work at Iowa State where he founded the statistics department. He published his most famous work, Introduction to the Theory of Statistics in 1950 that went on to be studied for decades. It was at Iowa State where he wrote about the median test he developed, now called Mood’s Median Test. Mood worked off of Friedman’s ideas and his contingency tables to create a simple test based on creating contingency tables of medians. He thought the median test would be simple and not have many assumptions, so it was easy to work with. 
+
+# Assumptions
+
+Mood’s Median Test requires a few assumptions to be fulfilled in order to draw accurate conclusions. Meeting assumptions for nonparametric tests are critical for a high test power. One such assumption is that observations are both independent within and between samples. The data must also only have one categorical variable and the response variable should be continuous. Lastly, the population distributions from which the samples were drawn should have similar shapes. However, this does not mean the populations must be normally distributed, they can come from any distribution.
+
+
+# Application
+
+With the multitude of nonparametric tests available, it is difficult to know when to use a specific test based on the data. Mood’s Median Test is advantageous in certain scenarios compared to other tests such as Kruskal-Wallis and Wilcoxon Rank Sum. A property that makes this test useful is the fact that it can be applied to more than two samples. However, the property that separates it from most other nonparametric tests is that it is a test on medians. This is helpful because when a dataset seems like it contains outliers, Mood’s Median Test will not skew the results as medians are resistant to outliers. Unlike the Kruskal-Wallis test that assumes approximately equal variance across samples, the median test does not require this assumption and can thus be applied in more cases. These broad applications allow Mood’s Median Test to be used for a variety of samples, but the tradeoff is the lower power that this test has compared to other nonparametric tests as well as their parametric counterparts.
+
+# Shortcomings
+
+Although the median test can be applied in various situations, the Wilcoxon Rank Sum Test, Mann Whitney Test, or the Kruskal Wallis Test usually provide a higher power. For only two samples, the Wilcoxon Rank Sum Test and the Mann Whitney Test will most likely perform better as they take the ranks of each observation into account. Testing on values above and below the median is helpful for dealing with outliers, but the median test does not provide the same level of information as the aforementioned tests and therefore will be less powerful. The same can be said for the Kruskal-Wallis test when more than two samples are being tested; Mood’s Median Test will usually be the weakest option. 
+	
+Another issue with Mood’s Median test is the efficiency at different sample sizes. Once samples become too large (>20), the test is not as powerful. This is because there are more values in the sample that are only being graded on if they are higher or lower than the median instead of their relative magnitude compared to the other observations in the data. Once sample sizes become larger, other nonparametric tests that rank observations, or parametric tests that can assume a certain distribution become more powerful than the median test. 
+
+# Mood’s Median Test steps (for two samples)
+
+The Mood’s Median Test, essentially a two-sample version of the Sign Test, is used to determine whether the medians of two independent samples are equal (the null hypothesis). To perform this test, you need to execute the following steps:
+
+* Calculate the median m of the combination of the two samples.
+* Create a 2 × 2 contingency table whose first row consists of the number of elements in each sample that are greater than m and whose second row consists of the number of elements in each sample that are less than or equal to m. The columns correspond to the two samples.
+* Perform a chi-square test of independence
+* If p-value < $alpha$ then there is a significant difference between the medians of the populations from which the two samples are derived; otherwise no significant difference between the medians is found.
+
+
+
+
+# Mood’s Median Test steps (for k samples)
+
+The calculation method for Mood's median test is:
+
+* Calculate the overall median of all the data.
+* Calculate the number of observations that are less than or equal to and greater than the overall median. If a factor has k levels, Minitab displays a 2 x k table of counts.
+* Perform a chi-square test for association on the 2 x k table of counts. A higher chi-square value provides stronger evidence against the null hypothesis. Only levels that contain two or more observations are included in the analysis. If the data have relatively few observations above the median because of ties with the median, then observations that are equal to the median may be counted with the observations that are above the median. The chi-square test statistics is given by:
+$X^2 = \Sigma(O_{ij}-E_{ij})^2/E_{ij}$
+
+where
+
+$O_{ij}$ = Observed number of observations in cell (i,j)
+
+$E_{ij}$ = Expected number of observations in cell (i,j)
+
+For each factor level, Minitab displays the median, the interquartile range, and the number of observations that are above and below the median.
+
+```{r setup, include=FALSE}
+library(RVAideMemoire)
+
+knitr::opts_chunk$set(
+  echo = FALSE,
+  warning = FALSE,
+  message = FALSE,
+  fig.align = "center"
+)
+```
+
+# Example
+
+35 Students from a City in India were asked to provide ratings for a restaurant chain in different areas of the city. There were 11 Students for Area A, 12 Students for Area B and 12 Students for Area C. The ratings are given on the basis of 4 conditions of cleanliness, taste etc. Each condition can get a maximum of 5 points hence a Restaurant can get a Maximum rating of 20 points. Test whether the Medians are the same for the 3 Restaurant chains. 
+(alpha = 5%)
+
+```{r createData}
+Type <- c('A','A','A','A','A','A','A','A','A','A','A',
+          'B','B','B','B','B','B','B','B','B','B','B','B',
+          'C','C','C','C','C','C','C','C','C','C','C','C')
+
+Value <- c(17,16,13,10,19,18,16,14,15,17,18,
+           19,15,15,17,16,12,10,19,12,13,14,15,
+           12,16,18,13,13,15,19,20,11,13,17,18)
+
+dat <- data.frame(Type, Value)
+
+dat[sample(1:nrow(dat), 8),]
+```
+
+# Research Questions
+
+For this study we have the following research question:
+
+ * Whether at least two of three groups significantly different?
+    -   $H_{1,0}$: $M_{A}$ = $M_{B}$ = $M_{C}$   ($M$ = Median)
+    -   $H_{1,A}$: There are at least two of them differ from each other.
+
+
+## Set Degrees of Freedom 
+
+Test statistic based on mood's median test follows chi-square distribution under null hypothesis. Thus degrees of freedom is K-1, which is 2.
+
+## Find out the Critical Chi-Square Value
+
+Since we set the alpha level as 0.05, and degrees of freedom 2, critical chi-square value is 5.991. It is rejection area for the test. In other words, we can reject null hypothesis under alpha level 0.05, if our test statistic is equal or greater than 5.991. 
+```{r critical}
+qchisq(p=.05, df=2, lower.tail=FALSE)
+```
+
+
+# Test
+```{r moodTest}
+mood.medtest(Value ~ Type, data = dat, exact = FALSE)
+```
+We can simply perform mood's median test in a line. According to the result, our test statistic is 2.125, which is smaller than 5.991. Thus we fail to reject null hypothesis under alpha level 0.05. Moreover, p-value of the test is also greater than 0.05, which leads same result.
+We can conclude that the Medians are the same for the 3 Restaurant Chains.
+
+\newpage
+# Work distribution 
+
+Jong Hee Lee : Research, Main ppt, Steps, Example  
+
+Antonio Bosca : ppt format, Abstract, Shortcomings
+
+Kevin Mouck : Background, Assumptions, Applications
+
+\newpage
+# Citation 
+https://www.geeksforgeeks.org/moods-median-test/
+https://www.informs.org/Explore/History-of-O.R.-Excellence/Miser-Harris-Presidential-Portrait-Gallery/Alexander-Mood
+
+\newpage
+# Code Appendix
+
+```{r codeAppendix, ref.label = knitr::all_labels(), echo = TRUE, eval = FALSE}
+
+```

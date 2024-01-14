@@ -4,7 +4,11 @@ JongHee Lee's Project Portfolio
 기술: R, Python, SAS 
 
 R - 통계분석, 머신러닝과 기반한 예측,분류 모델 만들기
+
+
 Python - 딥러닝에 기반한 예측 모델 만들기
+
+
 SAS - 기초 데이터 관리 코드
 
 

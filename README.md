@@ -23,8 +23,10 @@ JongHee Lee's Project Portfolio
      - 참여인원: 2
      - 언어: R
      - 담당역할: 데이터 로드, EDA, 각 음절에 대한 구간추정, ANOVA 가정 확인
-     - 프로젝트 소개: 
-          - 
+     - 프로젝트 소개: 32개의 변수로 이루어진 95개의 샘플 데이터를 바탕으로 6음절 문장에 대한 성조 패턴 발견
+          - EDA, 구간추정, Kruskal Wallis를 통해 첫음절과 끝음절에서 성조변화가 두드러지게 발생하는 결과를 확인하였습니다.
+
+
 5. Emergency Room Visit 횟수 분석 - Negative Binomial analysis
 6. 비모수 통계 이론과 실습 - Mood Median Test
 7. 리그오브레전드 게임 2022 세계대회 사용된 챔피언 분석 - ANOVA analysis

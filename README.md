@@ -28,8 +28,22 @@ JongHee Lee's Project Portfolio
 
 
 5. Emergency Room Visit 횟수 분석 - Negative Binomial analysis
-6. 비모수 통계 이론과 실습 - Mood Median Test
-7. 리그오브레전드 게임 2022 세계대회 사용된 챔피언 분석 - ANOVA analysis
+     - 기간: 2023.10 ~
+     - 참여인원: 2
+     - 언어: R
+     - 담당역할: EDA, 각 음절에 대한 구간추정, ANOVA 가정 확인
+     - 프로젝트 소개: 응급실 방문 횟수에 영향을 주는 요소 찾기
+          - Stepwise Regression 과 Negative Binomial Regression 모델의 비교를 통해 응급실 방문 횟수에 영향을 주는 5가지의 요소와 패턴을 찾아내었습니다.
+            
+7. 비모수 통계 이론과 실습 - Mood Median Test   
+     - 기간: 2023.10 ~
+     - 참여인원: 2
+     - 언어: R
+     - 담당역할: EDA, 각 음절에 대한 구간추정, ANOVA 가정 확인
+     - 프로젝트 소개: 응급실 방문 횟수에 영향을 주는 요소 찾기
+          - Stepwise Regression 과 Negative Binomial Regression 모델의 비교를 통해 응급실 방문 횟수에 영향을 주는 5가지의 요소와 패턴을 찾아내었습니다.
+            
+9. 리그오브레전드 게임 2022 세계대회 사용된 챔피언 분석 - ANOVA analysis
      
 ## Kaggle 프로젝트
 1. Card Price Prediction - Lasso, Ridge 규제에 기반한 예측모델
@@ -41,7 +55,4 @@ JongHee Lee's Project Portfolio
 1. 2023 NH 투자증권 빅데이터 경진대회
 
 ## SAS 기초 데이터 관리 코드
-
-
-
 

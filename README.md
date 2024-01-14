@@ -9,7 +9,7 @@ JongHee Lee's Project Portfolio
 
 
 ## 통계분석
-1. 2022 MLB 모평균 타율 예측 - One Stage Sampling method
+1. 2022 MLB 모평균 타율 예측 - One Stage Clustering sampling method
 2. Capstone Project - 6음절 영어문장에 발생하는 유의미한 성조 변화 분석 - Kruskal Wallis analysis
 3. Emergency Room Visit 횟수 분석 - Negative Binomial analysis
 4. 비모수 통계 이론과 실습 - Mood Median Test

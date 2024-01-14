@@ -36,12 +36,13 @@ JongHee Lee's Project Portfolio
           - Stepwise Regression 과 Negative Binomial Regression 모델의 비교를 통해 응급실 방문 횟수에 영향을 주는 5가지의 요소와 패턴을 찾아내었습니다.
             
 7. 비모수 통계 이론과 실습 - Mood Median Test   
-     - 기간: 2023.10 ~
-     - 참여인원: 2
+     - 기간: 2022.12 ~
+     - 참여인원: 3
      - 언어: R
-     - 담당역할: EDA, 각 음절에 대한 구간추정, ANOVA 가정 확인
-     - 프로젝트 소개: 응급실 방문 횟수에 영향을 주는 요소 찾기
-          - Stepwise Regression 과 Negative Binomial Regression 모델의 비교를 통해 응급실 방문 횟수에 영향을 주는 5가지의 요소와 패턴을 찾아내었습니다.
+     - 담당역할: 관련자료 조사, 데이터 로드, Mood Median Test 결과 정리
+     - 프로젝트 소개: 비모수통계 분석방법 중 중앙값을 활용한 테스트 실제 데이터에 활용 
+          - Wilcoxon Rank Sum test, Permutation test 등 비모수 통계에 쓰이는 분석으로 Mood Median Test를 채택하였습니다.
+          - 35개의 데이터를 바탕으로, 3가지 식당에 대한 평가를 바탕으로 평점이 높은 식당이 유의미한지 분석한 결과, 적어도 한가지 식당이 다른 식당들과 다른 평가를 받고 있다는 점을 확인하였습니다.
             
 9. 리그오브레전드 게임 2022 세계대회 사용된 챔피언 분석 - ANOVA analysis
      

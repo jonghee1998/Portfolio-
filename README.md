@@ -19,9 +19,15 @@ JongHee Lee's Project Portfolio
 
 
 3. Capstone Project - 6음절 영어문장에 발생하는 유의미한 성조 변화 분석 - Kruskal Wallis analysis
-4. Emergency Room Visit 횟수 분석 - Negative Binomial analysis
-5. 비모수 통계 이론과 실습 - Mood Median Test
-6. 리그오브레전드 게임 2022 세계대회 사용된 챔피언 분석 - ANOVA analysis
+     - 기간: 2023.12 ~
+     - 참여인원: 2
+     - 언어: R
+     - 담당역할: 데이터 로드, EDA, 각 음절에 대한 구간추정, ANOVA 가정 확인
+     - 프로젝트 소개: 
+          - 
+5. Emergency Room Visit 횟수 분석 - Negative Binomial analysis
+6. 비모수 통계 이론과 실습 - Mood Median Test
+7. 리그오브레전드 게임 2022 세계대회 사용된 챔피언 분석 - ANOVA analysis
      
 ## Kaggle 프로젝트
 1. Card Price Prediction - Lasso, Ridge 규제에 기반한 예측모델

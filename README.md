@@ -101,12 +101,14 @@ Following this directory structure
 
 
 1. MTG Card Price Prediction 
-     - 기간: 2022.12 ~
+     - 기간: 2022.10 ~
      - 참여인원: 1
      - 언어: R
      - 리더보드 결과: 7/38 
      - 프로젝트 소개: Lasso, Ridge 규제에 기반한 MTG 게임 카드 가격 예측모델
-          - 
+          - 전처리 과정을 거친 후 7006개의 train 데이터를 학습하여 369개의 test 데이터에 대한 가격 예측을 진행하였습니다.
+          -  cv.glmnet 함수를 이용한 회귀모델이 사용되었습니다.
+          -  lasso, ridge 규제를 사용한 각각의 회귀모델 결과, ridge 규제를 사용한 모델의 예측결과가 더 정확하게 나타났음을 확인했습니다.
 
 
 3. House Price Prediction - xgBoost 기반 머신러닝

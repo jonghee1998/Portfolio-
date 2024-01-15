@@ -111,7 +111,7 @@ Following this directory structure
           -  lasso, ridge 규제를 사용한 각각의 회귀모델 결과, ridge 규제를 사용한 모델의 예측결과가 더 정확하게 나타났음을 확인했습니다.
 
 
-3. House Price Prediction 
+2. House Price Prediction 
      - 기간: 2022.10 ~ 2022.11
      - 참여인원: 1
      - 언어: R
@@ -123,7 +123,7 @@ Following this directory structure
           -  10000번의 학습을 바탕으로 최종 예측값을 찾았습니다. (early stop = 25)
       
             
-5. Breed Identification 
+3. Breed Identification 
      - 기간: 2022.11
      - 참여인원: 1
      - 언어: R
@@ -131,8 +131,16 @@ Following this directory structure
      - 프로젝트 소개: PCA, t-SNE를 사용하여 차원축소된 데이터를 GMM 모델을 통해 종 3가지의 종으로 분류모델 생성
           - 전처리 과정을 거친 2500개의 데이터를 PCA를 통해 차원축소를 진행하고, t-SNE를 통해 추가 차원축소를 진행하였습니다.
           -  GMM 함수를 활용하여 분류 규칙을 수립했으며, 이때 클러스터의 수는 3으로 설정되었습니다.
+       
             
+4. Reddit Post Classification
+     - 기간: 2022.12
+     - 참여인원: 1
+     - 언어: R
+     - 리더보드 결과: 6/38 
+     - 프로젝트 소개: 
 
+            
 ## Dacon 경진대회
 1. 2023 NH 투자증권 빅데이터 경진대회
 

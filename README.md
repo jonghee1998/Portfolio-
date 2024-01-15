@@ -101,6 +101,29 @@ Following this directory structure
 
 
 1. MTG Card Price Prediction 
+     - 기간: 2022.09 ~ 2022.10
+     - 참여인원: 1
+     - 언어: R
+     - 리더보드 결과: 7/38 
+     - 프로젝트 소개: Lasso, Ridge 규제에 기반한 MTG 게임 카드 가격 예측모델 생성 
+          - 전처리 과정을 거친 후 7006개의 train 데이터를 학습하여 369개의 test 데이터에 대한 가격 예측을 진행하였습니다.
+          -  cv.glmnet 함수를 이용한 회귀모델이 사용되었습니다.
+          -  lasso, ridge 규제를 사용한 각각의 회귀모델 결과, ridge 규제를 사용한 모델의 예측결과가 더 정확하게 나타났음을 확인했습니다.
+
+
+3. House Price Prediction 
+     - 기간: 2022.10 ~ 2022.11
+     - 참여인원: 1
+     - 언어: R
+     - 리더보드 결과: 7/38 
+     - 프로젝트 소개: xgBoost 기반 머신러닝을 사용한 집값 예측모델 생성
+          - 전처리 과정을 거친 후 10000개의 train 데이터를 학습하여 4998개의 test 데이터에 대한 가격 예측을 진행하였습니다.
+          -  xgb.DMatrix, xgb.cv, xgb.train 함수를 사용해 형식 변환, 모델 fit, 학습을 진행하였습니다.
+          -  xgBoost 모델에 사용된 파라미터는 최적의 값으로 튜닝하였습니다.
+          -  10000번의 학습을 바탕으로 최종 예측값을 찾았습니다. (early stop = 25)
+      
+            
+5. Breed Identification - t-SNE 차원축소 기반 분류모델
      - 기간: 2022.10 ~
      - 참여인원: 1
      - 언어: R
@@ -109,11 +132,6 @@ Following this directory structure
           - 전처리 과정을 거친 후 7006개의 train 데이터를 학습하여 369개의 test 데이터에 대한 가격 예측을 진행하였습니다.
           -  cv.glmnet 함수를 이용한 회귀모델이 사용되었습니다.
           -  lasso, ridge 규제를 사용한 각각의 회귀모델 결과, ridge 규제를 사용한 모델의 예측결과가 더 정확하게 나타났음을 확인했습니다.
-
-
-3. House Price Prediction - xgBoost 기반 머신러닝
-4. Breed Identification - t-SNE 차원축소 기반 분류모델
-
 
 ## Dacon 경진대회
 1. 2023 NH 투자증권 빅데이터 경진대회

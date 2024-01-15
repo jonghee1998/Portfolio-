@@ -174,6 +174,24 @@ Following this directory structure
           - 정확한 학습을 위해 80%의 train, 20%의 test 데이터로 분류  
        8. 생성된 LSTM 예측모델을 바탕으로 앙상블 메타 모델을 생성하여 최종 수정종가 예측
           - 메타 모델의 알고리즘은 xgBoost 기법, 최적의 파라미터를 찾기 위해 GridSearchCV 함수 사용
+
+     - 결과 시각화
+          - 기술적 분석:      
+       ![image](https://github.com/jonghee1998/Portfolio-/assets/129052128/1a08dfca-cfaf-4e02-b918-7b46b61ce45a)
+       ![image](https://github.com/jonghee1998/Portfolio-/assets/129052128/41327bd9-a56e-463c-9800-8203eb9012a3)
+
+          - 기본적 분석:
+       ![image](https://github.com/jonghee1998/Portfolio-/assets/129052128/a38f881d-491d-47f9-bbce-f5aeee5bda82)
+       ![image](https://github.com/jonghee1998/Portfolio-/assets/129052128/5bc6d0f5-a192-4f4d-9584-583ba39feed6)
+
+          - 메타 모델:
+       ![image](https://github.com/jonghee1998/Portfolio-/assets/129052128/e564fdc7-6f8d-48a3-afeb-3f2c7d16632c)
+       ![image](https://github.com/jonghee1998/Portfolio-/assets/129052128/eda5cd3a-6ca7-4f73-8291-9b937dd2458a)
+
+
+
+
+
                   
             
 ## SAS 기초 데이터 관리 코드
